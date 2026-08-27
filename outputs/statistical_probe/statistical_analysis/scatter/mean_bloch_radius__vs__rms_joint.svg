@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="560" viewBox="0 0 860 560">
+  <style>
+    .title { font: 700 20px system-ui, -apple-system, BlinkMacSystemFont, sans-serif; fill: #0f172a; }
+    .label { font: 13px system-ui, -apple-system, BlinkMacSystemFont, sans-serif; fill: #334155; }
+    .tick { font: 11px system-ui, -apple-system, BlinkMacSystemFont, sans-serif; fill: #64748b; }
+    .legend { font: 12px system-ui, -apple-system, BlinkMacSystemFont, sans-serif; fill: #334155; }
+    .axis { stroke: #334155; stroke-width: 1.2; }
+    .grid { stroke: #e2e8f0; stroke-width: 1; }
+  </style>
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="90" y="32" class="title">Bloch radius vs RMS</text>
+  <line x1="90" y1="58" x2="90" y2="482" class="axis" />
+  <line x1="90" y1="482" x2="824" y2="482" class="axis" />
+  <line x1="90" y1="58" x2="824" y2="58" class="grid" />
+  <line x1="90" y1="270.0" x2="824" y2="270.0" class="grid" />
+  <line x1="824" y1="58" x2="824" y2="482" class="grid" />
+  <text x="90" y="517" class="label">mean_bloch_radius</text>
+  <text x="22" y="270.0" class="label" transform="rotate(-90 22 270.0)">rms_joint</text>
+  <text x="90" y="500" class="tick">0.1144</text>
+  <text x="776" y="500" class="tick">1</text>
+  <text x="18" y="482" class="tick">0.01283</text>
+  <text x="18" y="62" class="tick">0.0557</text>
+  <circle cx="824.00" cy="58.08" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="824.00" cy="58.00" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="209.72" cy="386.26" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="209.72" cy="380.18" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="197.10" cy="418.58" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="197.10" cy="384.53" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="96.82" cy="482.00" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="96.82" cy="453.97" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="824.00" cy="58.08" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="824.00" cy="58.00" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="209.72" cy="386.26" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="209.72" cy="380.18" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="171.78" cy="425.07" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="171.78" cy="406.08" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="114.85" cy="454.15" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="114.85" cy="443.93" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="824.00" cy="58.08" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="824.00" cy="58.00" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="209.72" cy="386.26" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="209.72" cy="380.18" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="180.60" cy="423.07" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="180.60" cy="399.30" r="4.2" fill="#dc2626" fill-opacity="0.72" /><circle cx="90.00" cy="470.21" r="4.2" fill="#2563eb" fill-opacity="0.72" /><circle cx="90.00" cy="461.50" r="4.2" fill="#dc2626" fill-opacity="0.72" />
+  <circle cx="90" cy="532" r="5" fill="#2563eb" /><text x="102" y="537" class="legend">bfs</text><circle cx="166" cy="532" r="5" fill="#dc2626" /><text x="178" y="537" class="legend">dfs</text>
+</svg>

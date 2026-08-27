@@ -7,5 +7,9 @@ venv/
 .DS_Store
 outputs/*
 !outputs/.gitkeep
+!outputs/*/
+outputs/*/*
+!outputs/*/statistical_analysis/
+!outputs/*/statistical_analysis/**
 *.wav
 *.npy
