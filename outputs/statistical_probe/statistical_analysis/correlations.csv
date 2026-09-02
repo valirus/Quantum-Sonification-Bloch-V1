@@ -1,19 +1,19 @@
 relationship,mode,x,y,n,pearson_r,pearson_p,spearman_rho,spearman_p
-local entropy vs spectral entropy,all,mean_von_neumann_entropy,spectral_entropy_mean,24,-0.343784,0.099999,-0.343628,0.100162
-local entropy vs spectral entropy,bfs,mean_von_neumann_entropy,spectral_entropy_mean,12,-0.151189,0.639042,-0.010657,0.973777
-local entropy vs spectral entropy,dfs,mean_von_neumann_entropy,spectral_entropy_mean,12,-0.568525,0.0537548,-0.692719,0.0125188
-central-cut entropy vs spectral entropy,all,central_cut_entanglement_entropy_normalized,spectral_entropy_mean,24,-0.538821,0.00659397,-0.352186,0.0914469
-central-cut entropy vs spectral entropy,bfs,central_cut_entanglement_entropy_normalized,spectral_entropy_mean,12,-0.122922,0.70351,0.003559,0.991242
-central-cut entropy vs spectral entropy,dfs,central_cut_entanglement_entropy_normalized,spectral_entropy_mean,12,-0.998274,1.20202e-13,-0.740218,0.00590738
-total MI vs duration,all,total_mutual_information,duration_sec,24,-0.725088,6.11428e-05,-0.685116,0.000220803
-total MI vs duration,bfs,total_mutual_information,duration_sec,12,-0.778673,0.00284529,-0.850022,0.000461986
-total MI vs duration,dfs,total_mutual_information,duration_sec,12,-0.726454,0.00745475,-0.528585,0.0772596
-total MI vs spectral flux,all,total_mutual_information,spectral_flux_mean,24,0.278552,0.18749,0.262101,0.215993
-total MI vs spectral flux,bfs,total_mutual_information,spectral_flux_mean,12,0.215743,0.50067,0.191489,0.551049
-total MI vs spectral flux,dfs,total_mutual_information,spectral_flux_mean,12,0.354979,0.257521,0.347518,0.268365
-Bloch radius vs RMS,all,mean_bloch_radius,rms_joint,24,0.997787,2.12219e-27,0.959516,1.36742e-13
-Bloch radius vs RMS,bfs,mean_bloch_radius,rms_joint,12,0.998209,1.44572e-13,0.980463,2.16923e-08
-Bloch radius vs RMS,dfs,mean_bloch_radius,rms_joint,12,0.999283,1.49447e-15,0.998225,1.38197e-13
-MI edge density vs stereo correlation,all,positive_edge_density,stereo_correlation,24,0.77625,8.25029e-06,0.705283,0.000118539
-MI edge density vs stereo correlation,bfs,positive_edge_density,stereo_correlation,12,0.764336,0.00379373,0.695817,0.01197
-MI edge density vs stereo correlation,dfs,positive_edge_density,stereo_correlation,12,0.788396,0.00231328,0.739305,0.0060018
+local entropy vs spectral entropy,all,mean_von_neumann_entropy,spectral_entropy_mean,2200,-0.002318,0.913477,-0.03596,0.0917482
+local entropy vs spectral entropy,bfs,mean_von_neumann_entropy,spectral_entropy_mean,1100,0.395529,1.6555e-42,0.512289,1.23493e-74
+local entropy vs spectral entropy,dfs,mean_von_neumann_entropy,spectral_entropy_mean,1100,-0.687166,1.51793e-154,-0.596929,3.65618e-107
+central-cut entropy vs spectral entropy,all,central_cut_entanglement_entropy_normalized,spectral_entropy_mean,2200,0.0273,0.200554,-0.029677,0.164071
+central-cut entropy vs spectral entropy,bfs,central_cut_entanglement_entropy_normalized,spectral_entropy_mean,1100,0.467562,7.82239e-61,0.481985,4.61837e-65
+central-cut entropy vs spectral entropy,dfs,central_cut_entanglement_entropy_normalized,spectral_entropy_mean,1100,-0.671468,4.32299e-145,-0.556601,1.70107e-90
+total MI vs duration,all,total_mutual_information,duration_sec,2200,-0.33147,1.43493e-57,-0.305797,7.66767e-49
+total MI vs duration,bfs,total_mutual_information,duration_sec,1100,-0.172056,9.31048e-09,-0.321886,6.18305e-28
+total MI vs duration,dfs,total_mutual_information,duration_sec,1100,-0.846491,7.33524e-303,-0.592637,2.81732e-105
+total MI vs spectral flux,all,total_mutual_information,spectral_flux_mean,2200,0.672696,7.41188e-290,0.145446,7.15107e-12
+total MI vs spectral flux,bfs,total_mutual_information,spectral_flux_mean,1100,0.622394,5.71252e-119,0.133079,9.49293e-06
+total MI vs spectral flux,dfs,total_mutual_information,spectral_flux_mean,1100,0.733673,1.82519e-186,0.232407,5.88278e-15
+Bloch radius vs RMS,all,mean_bloch_radius,rms_joint,2200,0.988107,0,0.857065,0
+Bloch radius vs RMS,bfs,mean_bloch_radius,rms_joint,1100,0.991367,0,0.910488,0
+Bloch radius vs RMS,dfs,mean_bloch_radius,rms_joint,1100,0.993252,0,0.999477,0
+MI edge density vs stereo correlation,all,positive_edge_density,stereo_correlation,2200,0.425188,2.66604e-97,0.119377,1.95221e-08
+MI edge density vs stereo correlation,bfs,positive_edge_density,stereo_correlation,1100,0.421195,1.55726e-48,0.12309,4.25134e-05
+MI edge density vs stereo correlation,dfs,positive_edge_density,stereo_correlation,1100,0.429784,1.13664e-50,0.115302,0.000126808
