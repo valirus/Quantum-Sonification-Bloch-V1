@@ -1,0 +1,70 @@
+{
+  "maximum_estimate_check_error": 7.105427357601002e-15,
+  "RQ2_rows_recomputed": 264,
+  "RQ2_maximum_band_check_error": 5.684341886080802e-14,
+  "RQ3_all_20_permutation_p_values_recomputed": true,
+  "FDR_families_recomputed": [
+    4,
+    20,
+    6
+  ],
+  "RQ1_all_four_FDR_below_0_05": true,
+  "RQ3_FDR_below_0_05": [
+    {
+      "mode": "bfs",
+      "layer": 1,
+      "spearman_rho": -0.638727621336597,
+      "FDR_q_layer_mode_family": 3.999960000399996e-05
+    },
+    {
+      "mode": "bfs",
+      "layer": 3,
+      "spearman_rho": -0.743930393039304,
+      "FDR_q_layer_mode_family": 3.999960000399996e-05
+    },
+    {
+      "mode": "bfs",
+      "layer": 4,
+      "spearman_rho": -0.4664386438643864,
+      "FDR_q_layer_mode_family": 9.99990000099999e-05
+    },
+    {
+      "mode": "dfs",
+      "layer": 1,
+      "spearman_rho": -0.6365395635779132,
+      "FDR_q_layer_mode_family": 3.999960000399996e-05
+    },
+    {
+      "mode": "dfs",
+      "layer": 2,
+      "spearman_rho": -0.2689708970897089,
+      "FDR_q_layer_mode_family": 0.0196569462876799
+    },
+    {
+      "mode": "dfs",
+      "layer": 3,
+      "spearman_rho": -0.833963396339634,
+      "FDR_q_layer_mode_family": 3.999960000399996e-05
+    },
+    {
+      "mode": "dfs",
+      "layer": 4,
+      "spearman_rho": -0.5882988298829883,
+      "FDR_q_layer_mode_family": 3.999960000399996e-05
+    },
+    {
+      "mode": "dfs",
+      "layer": 7,
+      "spearman_rho": -0.2436603660366036,
+      "FDR_q_layer_mode_family": 0.0327996720032799
+    },
+    {
+      "mode": "dfs",
+      "layer": 10,
+      "spearman_rho": -0.2615421542154215,
+      "FDR_q_layer_mode_family": 0.0213747862521374
+    }
+  ],
+  "RQ4_flux_caution": "Small positive effect in this cohort, FDR q=0.04652; development cohort did not establish a mean difference. Do not claim uniform null or strong universal separation.",
+  "provenance": "Secondary execution uses archived reference scripts, not an inspection of the current WSL scripts."
+}

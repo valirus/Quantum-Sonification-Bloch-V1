@@ -1,0 +1,6 @@
+numpy>=2.0
+pandas>=2.0
+scipy>=1.15
+matplotlib>=3.8
+# The optional --render check also needs the original project dependencies:
+# networkx and qiskit. Actual validation versions are in validation_environment.json.

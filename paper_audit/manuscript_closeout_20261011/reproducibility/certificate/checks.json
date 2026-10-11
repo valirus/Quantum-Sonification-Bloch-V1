@@ -1,0 +1,24 @@
+{
+  "n_numeric_states": 17,
+  "n_symbolic_coherence_cases": 330,
+  "all_symbolic_cancellation_witnesses_exist": true,
+  "max_entropy_formula_error_bits": 4.484797105340963e-15,
+  "max_single_RDM_error": 1.3625932677369208e-16,
+  "max_pair_RDM_error": 1.6653345369377348e-16,
+  "all_original_engine_modes_audio_identical": true,
+  "frozen_source_hashes": {
+    "simulations.py": "92fac14aa95d286fb305198675881d8209a76c2074cd00bae582a8410c517361",
+    "sonification.py": "23e747dfe61ff50cc149f7395588fca86488e77f3a18e11fdfa8f87590630ad5"
+  },
+  "exact_formula": "S(A)=sum_i h2(sin(alpha_i/4)^2); each alpha arbitrary real; internal CZ local across A|B",
+  "continuous_interval_parameterization": "alpha_i=pi*t, t in [0,1], gives S(A)=7*h2(sin(pi*t/4)^2), continuous strictly increasing 0 to 7",
+  "randomized_estimator_bounds": {
+    "minimax_expected_absolute_error_bits": 3.5,
+    "minimax_expected_squared_error_bits2": 12.25,
+    "uniform_discrete_S_0to7_Bayes_MSE_bits2": 5.25,
+    "uniform_discrete_S_0to7_Bayes_MAE_bits": 2.0,
+    "uniform_continuous_entropy_S_0to7_Bayes_MSE_bits2": 4.083333333333333,
+    "uniform_continuous_entropy_S_0to7_Bayes_MAE_bits": 1.75
+  },
+  "scope": "Final snapshot; no identifying metadata or preparation history input; external physical family, not RQC ensemble; numeric confirmations do not replace analytic cancellation proof"
+}

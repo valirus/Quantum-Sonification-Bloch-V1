@@ -1,0 +1,27 @@
+{
+  "manuscript_en": {
+    "pages": 13,
+    "unresolved_references": false,
+    "overfull_boxes": false,
+    "empty_pages": []
+  },
+  "manuscript_es": {
+    "pages": 14,
+    "unresolved_references": false,
+    "overfull_boxes": false,
+    "empty_pages": []
+  },
+  "supplement_en": {
+    "pages": 6,
+    "unresolved_references": false,
+    "overfull_boxes": false,
+    "empty_pages": []
+  },
+  "supplement_es": {
+    "pages": 6,
+    "unresolved_references": false,
+    "overfull_boxes": false,
+    "empty_pages": []
+  },
+  "scope": "All 39 pages rendered and reviewed; detail checks of charts, captions and tables; no missing references, overfull boxes or empty pages. Official class/style unchanged."
+}

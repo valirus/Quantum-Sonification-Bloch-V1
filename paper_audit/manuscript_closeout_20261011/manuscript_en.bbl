@@ -1,0 +1,78 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Benjamini and Hochberg(1995)}]{Benjamini1995}
+Benjamini Y, Hochberg Y (1995) Controlling the false discovery rate: A
+  practical and powerful approach to multiple testing. Journal of the Royal
+  Statistical Society: Series B (Methodological) 57(1):289--300.
+  \doi{10.1111/j.2517-6161.1995.tb02031.x}
+
+\bibitem[{Benjamini and Yekutieli(2001)}]{Benjamini2001}
+Benjamini Y, Yekutieli D (2001) The control of the false discovery rate in
+  multiple testing under dependency. The Annals of Statistics 29(4):1165--1188.
+  \doi{10.1214/aos/1013699998}
+
+\bibitem[{Enge et~al.(2024)Enge, Elmquist, Caiola, R{\"o}nnberg, Rind, Iber,
+  Lenzi, Lan, H{\"o}ldrich, and Aigner}]{Enge2024}
+Enge K, Elmquist E, Caiola V, et~al (2024) Open your ears and take a look: A
+  state-of-the-art report on the integration of sonification and visualization.
+  Computer Graphics Forum 43(3):e15114. \doi{10.1111/cgf.15114}
+
+\bibitem[{Groisman et~al.(2005)Groisman, Popescu, and Winter}]{Groisman2005}
+Groisman B, Popescu S, Winter A (2005) Quantum, classical, and total amount of
+  correlations in a quantum state. Physical Review A 72:032317.
+  \doi{10.1103/PhysRevA.72.032317}
+
+\bibitem[{Grond and Berger(2011)}]{GrondBerger2011}
+Grond F, Berger J (2011) Parameter mapping sonification. In: Hermann T, Hunt A,
+  Neuhoff JG (eds) The Sonification Handbook. Logos Verlag, Berlin, chap~15,
+  \urlprefix\url{https://sonification.de/handbook/chapters/chapter15/}
+
+\bibitem[{Grond and Hermann(2012)}]{GrondHermann2012}
+Grond F, Hermann T (2012) Singing function: Exploring auditory graphs with a
+  vowel based sonification. Journal on Multimodal User Interfaces 5:87--95.
+  \doi{10.1007/s12193-011-0068-2}
+
+\bibitem[{Hein et~al.(2004)Hein, Eisert, and Briegel}]{Hein2004}
+Hein M, Eisert J, Briegel HJ (2004) Multiparty entanglement in graph states.
+  Physical Review A 69:062311. \doi{10.1103/PhysRevA.69.062311}
+
+\bibitem[{Kontogeorgakopoulos and Burgarth(2014)}]{Kontogeorgakopoulos2014}
+Kontogeorgakopoulos A, Burgarth D (2014) Sonification of controlled quantum
+  dynamics. In: Proceedings of the International Computer Music Conference and
+  Sound and Music Computing Conference,
+  \urlprefix\url{https://www.icmc14-smc14.net/images/proceedings/PS3-B10-SonificationofControlled.pdf}
+
+\bibitem[{Miranda et~al.(2023)Miranda, Thomas, and Itabora{\'i}}]{Miranda2023}
+Miranda ER, Thomas P, Itabora{\'i} PV (2023) {Q1Synth}: A quantum computer
+  musical instrument. Applied Sciences 13(4):2386. \doi{10.3390/app13042386}
+
+\bibitem[{Page(1993)}]{Page1993}
+Page DN (1993) Average entropy of a subsystem. Physical Review Letters
+  71:1291--1294. \doi{10.1103/PhysRevLett.71.1291}
+
+\bibitem[{Tudoce et~al.(2026)Tudoce, P{\l}odzie{\'n}, Lewenstein, and
+  Yamada}]{Tudoce2026}
+Tudoce J, P{\l}odzie{\'n} M, Lewenstein M, et~al (2026) Sonification of
+  entanglement dynamics in many-qubit systems. The European Physical Journal
+  Special Topics \doi{10.1140/epjs/s11734-026-02592-5}
+
+\bibitem[{Vandr{\'e} et~al.(2025)Vandr{\'e}, de~Jong, Hahn, Burchardt,
+  G{\"u}hne, and Pappa}]{Vandre2025}
+Vandr{\'e} L, de~Jong J, Hahn F, et~al (2025) Distinguishing graph states by
+  the properties of their marginals. Physical Review A 111:052449.
+  \doi{10.1103/PhysRevA.111.052449}
+
+\bibitem[{Vickers and Hogg(2006)}]{VickersHogg2006}
+Vickers P, Hogg B (2006) Sonification abstraite/sonification concr{\`e}te: An
+  `{\ae}sthetic perspective space' for classifying auditory displays in the ars
+  musica domain. In: Stockman T, Nickerson LV, Frauenberger C, et~al (eds)
+  Proceedings of the 12th International Conference on Auditory Display, London,
+  pp 210--216, \urlprefix\url{https://arxiv.org/abs/1311.5426}
+
+\end{thebibliography}

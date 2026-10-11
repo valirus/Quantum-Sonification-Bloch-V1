@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "file_hashes_verified": 1334,
+  "all_src_match_frozen_reference_hashes": true,
+  "RQ1_RQ4_max_errors": {
+    "separate_script": "recheck_secondary.py"
+  },
+  "control_max_error": 1.7763568394002505e-15,
+  "control_renders": 32800,
+  "control_comparisons": 32000,
+  "DFS_duration_control_max_difference_sec": 0,
+  "all_tree_states_changed": true,
+  "MI_summary_max_error": 3.552713678800501e-15,
+  "MI_max_asymmetry": 0,
+  "exact_DFS_duration_max_error_sec": 1.7763568394002505e-15,
+  "distance_summary_max_error": 9.020562075079397e-17,
+  "notes": [
+    "Source equality and hashes are byte checks, not a remote git history verification.",
+    "Original 3000 WAV/statevector files were not supplied; generation validation is recorded, not independently replayed here.",
+    "Distance and control bootstrap calculations recomputed independently from supplied inputs."
+  ]
+}

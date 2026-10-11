@@ -1,0 +1,229 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}\usepackage[T1]{fontenc}\usepackage{lmodern,amsmath,amssymb,booktabs,longtable,graphicx,xurl,microtype}
+\IfFileExists{spanish.ldf}{\usepackage[spanish,es-tabla,es-nodecimaldot]{babel}}{\usepackage[provide=*,spanish]{babel}}
+\AtBeginDocument{\renewcommand{\tablename}{Tabla}\renewcommand{\figurename}{Figura}}
+\usepackage[hidelinks]{hyperref}
+\title{Recurso en línea 1: métodos adicionales, resultados y pruebas}\author{}\date{11 de octubre de 2026}\begin{document}\maketitle
+
+\section{Alcance, entradas y reproducción}
+Este recurso complementa la caracterización computacional del instrumento congelado. Las cohortes principales son desarrollo 1000--1099 y validación prospectiva 3000--3099, cada una con 100 semillas, 11 profundidades y dos modos. La cohorte previa 2000--2099, el piloto técnico, los estados de la familia física y los controles sintéticos son conjuntos distintos; no se agregan a las observaciones principales. Las cinco RQ corregidas conservan la parte útil del roadmap. No se presentan como terminadas tareas no realizadas, pruebas de hardware, evaluación de interfaz ni aprendizaje humano.
+
+El paquete incluye ambas tablas de análisis de 2.200 filas, predicciones, resultados compactos, especificaciones de método, código del sintetizador congelado y certificados. También incluye el ZIP completo de evidencia restante para inspeccionar matrices, descriptores, metadatos y controles de validación. No contiene todos los vectores de estado, circuitos QPY y WAV originales de esa cohorte. Los autores los conservan en las ejecuciones y deben depositarlos con identificador permanente antes de declarar disponibilidad pública completa. No se inventa ese identificador.
+
+El protocolo se finalizó el 11 de octubre de 2026 a las 07:10:02 UTC y se fijó en el commit \texttt{e968ba6d760cf6931c76ab39f1b698a871075249}, antes de generar la cohorte nueva. Desarrollo y resultados de 2000--2099 ya se habían inspeccionado. No es un prerregistro público. Su adenda fija semillas nuevas, escalado de distancias con desarrollo y observaciones de controles. Los registros de generación y ejecución se conservan separadamente de las conclusiones estadísticas.
+
+\section{Resultados completos de validación}
+Todos los IC son del 95\% y remuestrean semillas, no filas ni réplicas de control. RQ3 tiene 20 pruebas ajustadas con BH; RQ4, seis; distancias, cuatro. Los restantes IC de controles son descriptivos puntuales. Se redondea para lectura; los CSV conservan precisión.
+\subsection{RQ3: estéreo por capa}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrrr}
+\toprule
+Modo & Capa & $\rho$ & $p$ & $q_{\rm BH}$ \\
+\midrule\endhead
+BFS & 1 & $-0.6387$ & $0.000010$ & $0.000040$ \\
+BFS & 2 & $-0.1977$ & $0.048690$ & $0.096017$ \\
+BFS & 3 & $-0.7439$ & $0.000010$ & $0.000040$ \\
+BFS & 4 & $-0.4664$ & $0.000030$ & $0.000100$ \\
+BFS & 5 & $0.1371$ & $0.173768$ & $0.248240$ \\
+BFS & 6 & $0.0590$ & $0.560954$ & $0.590478$ \\
+BFS & 7 & $-0.1938$ & $0.052809$ & $0.096017$ \\
+BFS & 8 & $-0.0417$ & $0.679563$ & $0.679563$ \\
+BFS & 9 & $-0.1486$ & $0.139109$ & $0.231848$ \\
+BFS & 10 & $-0.0763$ & $0.450665$ & $0.531889$ \\
+DFS & 1 & $-0.6365$ & $0.000010$ & $0.000040$ \\
+DFS & 2 & $-0.2690$ & $0.006880$ & $0.019657$ \\
+DFS & 3 & $-0.8340$ & $0.000010$ & $0.000040$ \\
+DFS & 4 & $-0.5883$ & $0.000010$ & $0.000040$ \\
+DFS & 5 & $0.0756$ & $0.452105$ & $0.531889$ \\
+DFS & 6 & $0.0643$ & $0.524445$ & $0.582716$ \\
+DFS & 7 & $-0.2437$ & $0.014760$ & $0.032800$ \\
+DFS & 8 & $-0.0874$ & $0.385956$ & $0.514608$ \\
+DFS & 9 & $-0.1393$ & $0.166528$ & $0.248240$ \\
+DFS & 10 & $-0.2615$ & $0.008550$ & $0.021375$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{RQ5: todos los modelos}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{lllrrr}
+\toprule
+Modo & Objetivo & Modelo & MSE & RMSE & $R^2$ \\
+\midrule\endhead
+BFS & duración & M0 & $0.7073608$ & $0.841047$ & $0.304132$ \\
+BFS & duración & M1 & $0.7088805$ & $0.841950$ & $0.302637$ \\
+BFS & duración & M2 & $0.7092457$ & $0.842167$ & $0.302278$ \\
+BFS & flujo & M0 & $0.0002109$ & $0.014522$ & $0.711103$ \\
+BFS & flujo & M1 & $0.0002043$ & $0.014295$ & $0.720081$ \\
+BFS & flujo & M2 & $0.0002044$ & $0.014297$ & $0.719999$ \\
+DFS & duración & M0 & $0.0027359$ & $0.052306$ & $0.998626$ \\
+DFS & duración & M1 & $0.0021759$ & $0.046646$ & $0.998907$ \\
+DFS & duración & M2 & $0.0003914$ & $0.019784$ & $0.999803$ \\
+DFS & flujo & M0 & $1.714\times10^{-6}$ & $0.001309$ & $0.996780$ \\
+DFS & flujo & M1 & $1.715\times10^{-6}$ & $0.001309$ & $0.996780$ \\
+DFS & flujo & M2 & $1.683\times10^{-6}$ & $0.001297$ & $0.996839$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{RQ5: ganancia MSE e IC con entrenamiento fijo}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrr}
+\toprule
+Modo & Objetivo & $\Delta$ & IC del 95\% \\
+\midrule\endhead
+BFS & duración & $-0.0003652$ & $[-0.0031547, 0.0023831]$ \\
+BFS & flujo & $-6.030\times10^{-8}$ & $[-1.597\times10^{-6}, 1.426\times10^{-6}]$ \\
+DFS & duración & $0.0017845$ & $[0.0015241, 0.0020629]$ \\
+DFS & flujo & $3.169\times10^{-8}$ & $[1.353\times10^{-9}, 6.232\times10^{-8}]$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{Controles: todos los contrastes secundarios}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{lllrr}
+\toprule
+Control & Modo & Descriptor & Cambio & IC del 95\% \\
+\midrule\endhead
+Árbol & BFS & Duración (s) & $-0.42538$ & $[-0.52068, -0.33835]$ \\
+Árbol & DFS & Duración (s) & $0$ & $[0, 0]$ \\
+Pesos & BFS & Duración (s) & $0.01740$ & $[0.01551, 0.01943]$ \\
+Pesos & DFS & Duración (s) & $0$ & $[0, 0]$ \\
+Árbol & BFS & RMS & $-0.00011$ & $[-0.00020, -2.733\times10^{-5}]$ \\
+Árbol & DFS & RMS & $0.00013$ & $[0.00012, 0.00014]$ \\
+Pesos & BFS & RMS & $0.00011$ & $[9.615\times10^{-5}, 0.00012]$ \\
+Pesos & DFS & RMS & $0.00014$ & $[0.00013, 0.00015]$ \\
+Árbol & BFS & Centroide (Hz) & $-1.27998$ & $[-3.64437, 1.16756]$ \\
+Árbol & DFS & Centroide (Hz) & $-0.53406$ & $[-0.89137, -0.17305]$ \\
+Pesos & BFS & Centroide (Hz) & $-1.38441$ & $[-1.78462, -0.98207]$ \\
+Pesos & DFS & Centroide (Hz) & $-0.29888$ & $[-0.64601, 0.02913]$ \\
+Árbol & BFS & Ancho banda (Hz) & $3.82191$ & $[1.30073, 6.42446]$ \\
+Árbol & DFS & Ancho banda (Hz) & $0.04187$ & $[-0.01077, 0.09709]$ \\
+Pesos & BFS & Ancho banda (Hz) & $-0.73778$ & $[-0.88519, -0.59667]$ \\
+Pesos & DFS & Ancho banda (Hz) & $-0.00402$ & $[-0.03566, 0.02831]$ \\
+Árbol & BFS & Entropía espectral & $0.07188$ & $[0.04804, 0.09644]$ \\
+Árbol & DFS & Entropía espectral & $0.00037$ & $[3.533\times10^{-5}, 0.00071]$ \\
+Pesos & BFS & Entropía espectral & $-0.00709$ & $[-0.00794, -0.00629]$ \\
+Pesos & DFS & Entropía espectral & $2.692\times10^{-5}$ & $[-0.00026, 0.00031]$ \\
+Árbol & BFS & Flujo & $0.00186$ & $[0.00045, 0.00324]$ \\
+Árbol & DFS & Flujo & $0.00017$ & $[8.604\times10^{-5}, 0.00025]$ \\
+Pesos & BFS & Flujo & $-0.00023$ & $[-0.00033, -0.00013]$ \\
+Pesos & DFS & Flujo & $-3.667\times10^{-5}$ & $[-9.182\times10^{-5}, 1.925\times10^{-5}]$ \\
+Árbol & BFS & Correlación estéreo & $0.00586$ & $[0.00037, 0.01175]$ \\
+Árbol & DFS & Correlación estéreo & $0.00016$ & $[-0.00058, 0.00087]$ \\
+Pesos & BFS & Correlación estéreo & $0.00047$ & $[-0.00056, 0.00151]$ \\
+Pesos & DFS & Correlación estéreo & $0.00012$ & $[-0.00066, 0.00087]$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{Controles: estructura de fronteras}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrr}
+\toprule
+Control & Medida & Cambio & IC del 95\% \\
+\midrule\endhead
+Árbol & Fronteras & $-0.7905$ & $[-0.9517, -0.6435]$ \\
+Pesos & Fronteras & $0$ & $[0, 0]$ \\
+Árbol & Ancho máximo & $0.7244$ & $[0.6462, 0.8029]$ \\
+Pesos & Ancho máximo & $0$ & $[0, 0]$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{Distancias por capa}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrr}
+\toprule
+Modo & Capa & $\rho$ Bloch & $\rho$ MI \\
+\midrule\endhead
+BFS & 1 & $0.54608$ & -- \\
+BFS & 2 & $0.21795$ & $0.13598$ \\
+BFS & 3 & $-0.00275$ & $0.02587$ \\
+BFS & 4 & $0.06408$ & $0.03317$ \\
+BFS & 5 & $-0.03942$ & $-0.05403$ \\
+BFS & 6 & $0.03655$ & $-0.10372$ \\
+BFS & 7 & $0.05731$ & $-0.12601$ \\
+BFS & 8 & $-0.03177$ & $0.03798$ \\
+BFS & 9 & $0.00531$ & $-0.01570$ \\
+BFS & 10 & $-0.04488$ & $-0.02636$ \\
+DFS & 1 & $0.54063$ & -- \\
+DFS & 2 & $0.27032$ & $0.15726$ \\
+DFS & 3 & $0.17174$ & $0.13244$ \\
+DFS & 4 & $0.10509$ & $0.06350$ \\
+DFS & 5 & $0.06962$ & $0.00464$ \\
+DFS & 6 & $0.15910$ & $0.03644$ \\
+DFS & 7 & $0.06597$ & $-0.06520$ \\
+DFS & 8 & $0.07267$ & $0.04947$ \\
+DFS & 9 & $0.01169$ & $-0.06816$ \\
+DFS & 10 & $0.08966$ & $-0.01317$ \\
+\bottomrule
+\end{longtable}}
+
+
+\section{Identidades temporales exactas}
+\subsection{DFS: invariante de componentes y multiconjunto de pesos}
+Un bosque tiene $n$ nodos, $c$ componentes y pesos $w_e>10^{-10}$ en $[0,2]$ bits. DFS visita una vez cada nodo y cada nodo no raíz hereda una arista. Hay $c$ eventos raíz, $n-c$ eventos no raíz y $c-1$ separadores. Por tanto,
+\[
+T_{\rm DFS}=c\tau_r+\sum_e(\tau_{\max}-\beta w_e)+(c-1)\tau_g,
+\]
+con $\tau_r=0.30$, $\tau_{\max}=0.60$, $\beta=0.25$ y $\tau_g=0.12$ en segundos. Para $n=15$, resulta $8.88-0.18c-0.25\sum_e w_e$. Reordenar eventos, mover pesos o cambiar adyacencia conservando multiconjuntos por componente no modifica esta suma.
+
+El número de muestras implementado es más preciso que la identidad continua aproximada:
+\[
+N_{\rm DFS}=c\operatorname{round}(f_s\tau_r)+\sum_e\operatorname{round}[f_s(0.60-0.25w_e)]+(c-1)\operatorname{round}(f_s\tau_g).
+\]
+Las duraciones positivas hacen que no intervenga la guarda de mínimo de una muestra. La suma también es invariante bajo los controles. Una reconstrucción independiente de Kruskal coincide con las 1.100 duraciones originales dentro de residuo de coma flotante de $1.78\times10^{-15}$ s. Las 16.000 diferencias de controles son exactamente cero. Esto concierne a longitud, no a igualdad de muestras ni de orden de eventos.
+
+\subsection{BFS: promedio dependiente de fronteras}
+Cada componente aporta una frontera raíz. Sean $F$ el número de fronteras no raíz y $\mu_j$ sus pesos entrantes medios. Entonces
+\[
+T_{\rm BFS}=c\tau_r+F\tau_{\max}-\beta\sum_{j=1}^F\mu_j+(c-1)\tau_g.
+\]
+Mover pesos sobre un árbol fijo conserva fronteras pero puede modificar sus medias, porque sus tamaños no tienen por qué ser iguales. Cambiar árbol puede alterar también $F$ y tamaños. Los controles conservan componentes y pesos, no secuencias de grados; no identifican atribución causal exclusiva a topología. Los bosques originales y sintéticos comparten Bloch, no necesariamente un estado cuántico de origen válido.
+
+\section{Certificado físico de no identificabilidad}
+\subsection{Preparación y forma de fase}
+Sean $A=\{0,\ldots,6\}$ y $B=\{7,\ldots,14\}$, con ciclos internos $E_A$ y $E_B$. Desde $|+\rangle^{\otimes15}$ se aplican CZ internas y siete fases controladas $\operatorname{CP}(\alpha_i)$ en $(i,7+i)$. Las amplitudes tienen módulo uniforme y fase
+\[
+\Phi(x)=\pi\sum_{(i,j)\in E_A\cup E_B}x_ix_j+\sum_{i=0}^{6}\alpha_i x_i x_{7+i}.
+\]
+Todas las compuertas son unitarias y las fases pueden ser reales arbitrarias. Es preparación física externa, no muestra del conjunto aleatorio. El grafo de ciclos describe compuertas de preparación; el grafo de información mutua del motor describe correlaciones de reducciones. No deben identificarse.
+
+\subsection{Todas las reducciones de uno y dos qubits son máximamente mixtas}
+Para un conjunto retenido $T$ de uno o dos qubits, las amplitudes uniformes dan diagonales $2^{-|T|}$. En una entrada no diagonal, $F\subseteq T$ es el conjunto no vacío de bits que difieren entre bra y ket. Las CZ internas generan $(-1)^{x_w}$ por cada bit trazado vecino de un número impar de bits modificados. La diferencia de fases de emparejamiento sólo depende de parejas trazadas de los bits modificados.
+
+Siempre existe un vecino interno impar $w\notin T$ que no es ninguna de esas parejas. Si cambia un bit, tiene dos vecinos internos y como máximo uno es el otro bit retenido; su pareja está en el bloque contrario. Si cambian dos en un bloque, sus vecindarios en un ciclo de siete u ocho nodos difieren en al menos dos vértices externos al par y las parejas están en el otro bloque. Si cambia uno por bloque, el de $A$ tiene dos vecinos internos fuera de $T$ y el de $B$ tiene como máximo una pareja en $A$, dejando al menos un vecino sin contribución del emparejamiento. El qubit 14 sin pareja no añade dependencia.
+
+Sumar $x_w=0,1$ cancela exactamente la entrada no diagonal para cualquier vector de fases. Así, $\rho_i=\mathbb I_2/2$ y $\rho_{ij}=\mathbb I_4/4$. El CSV enumera los $15+3\binom{15}{2}=330$ casos de conjuntos retenidos/modificados y un testigo de cancelación por caso. Es una comprobación finita del soporte de la prueba, no muestreo estadístico de fases.
+
+\subsection{Entropía del corte con marginales de orden bajo idénticas}
+Todas las compuertas conmutan. Se aplican al final los ciclos como $U_A\otimes U_B$, unitarias locales al corte que conservan espectro de Schmidt. Antes de ellas hay siete pares independientes $\operatorname{CP}(\alpha_i)|++\rangle$ y un $|+\rangle$ sin pareja. Los autovalores reducidos de cada par son $\cos^2(\alpha_i/4)$ y $\sin^2(\alpha_i/4)$, salvo orden. La aditividad da
+\[
+S_A=\sum_{i=0}^{6}h_2\left(\sin^2\frac{\alpha_i}{4}\right).
+\]
+Con $\alpha_i=\pi t$, $t\in[0,1]$, es $7h_2(\sin^2(\pi t/4))$, continua y estrictamente creciente entre 0 y 7 bits. En el extremo de corte nulo, los bloques aún contienen entrelazamiento interno de estado de grafo. La familia es dos-uniforme; no se afirma que sea absolutamente máximamente entrelazada en 15 qubits.
+
+Todo estado entrega $r_i=0$, $L_i=1$ e $I_{ij}=0$. El motor recibe 15 nodos aislados y las mismas portadoras y posiciones neutras. Produce audio final idéntico dentro de cada modo, raíz y configuración fijos. No afirma igualdad entre BFS y DFS ni de audio de historiales completos de preparación. En general, marginales idénticas de uno y dos qubits bastan para entradas idénticas; el motor tampoco codifica toda la información de las marginales de dos qubits.
+
+El certificado numérico contiene nueve casos de fase común y ocho vectores heterogéneos, con residuos máximos independientes de marginales individuales y por pares de $1.37\times10^{-16}$ y $1.67\times10^{-16}$. Las comprobaciones archivadas con el motor original dan igualdad exacta por modo; los cálculos independientes de Schmidt concuerdan con la entropía dentro de $10^{-13}$ bits. La identidad de audio es una afirmación matemática con descriptores exactos. Los cálculos de coma flotante corroboran los casos probados, no un conjunto exhaustivo de codificaciones numéricas de fases; cancelación y argumento de Schmidt prueban la familia continua. Son pruebas separadas de la validación de 100 semillas.
+
+\subsection{Error óptimo de peor caso}
+Sea $Y$ salida de un estimador desde el audio final, con posibles bits aleatorios independientes de la preparación desconocida. Su distribución es idéntica en toda la familia. Los extremos de entropía dan
+\[
+\mathbb E|Y|+\mathbb E|Y-7|\ge7,
+\]
+por lo que el error absoluto esperado de peor caso es al menos 3,5 bits. Además,
+\[
+\tfrac12\{\mathbb E Y^2+\mathbb E(Y-7)^2\}=\mathbb E(Y-3.5)^2+12.25\ge12.25.
+\]
+La constante $Y=3.5$ alcanza ambas cotas en todo el intervalo y prueba optimalidad minimax. Son afirmaciones de riesgo esperado, no que toda salida yerre por 3,5 bits en cualquier estado. No requieren prior, arquitectura neuronal ni entrenamiento. Excluyen inferencia universal desde ese audio final; no predicción dependiente de distribución ni inferencia con observables o metadatos adicionales.
+
+\section{Discontinuidad azimutal y continuidad}
+Se consideran estados puros ecuatoriales $(|0\rangle+e^{\pm\mathrm i\epsilon}|1\rangle)/\sqrt2$ con $0<\epsilon<\pi/2$. Su distancia de traza es $\sin\epsilon$. Las voces tienen igual frecuencia, amplitud y envolvente; sea $E>0$ norma al cuadrado de su señal mono común. Los vectores de ganancias tienen ángulos $\epsilon/4$ y $\pi/2-\epsilon/4$, con producto escalar $\sin(\epsilon/2)$. Por tanto,
+\[
+\frac{\|s_+-s_-\|_2^2}{\|s_+\|_2^2+\|s_-\|_2^2}=1-\sin(\epsilon/2)\longrightarrow1.
+\]
+El denominador fija normalización y evita confundir distancia con energía dimensional. Una distancia física que tiende a cero no exige distancia de audio pequeña. El ejemplo de voz aislada prueba falta de continuidad universal; no cuantifica discriminación humana ni frecuencia de esas transiciones en una interfaz. Se conserva el mapeo para mantener el dataset auditado V1. Corregirlo requiere una decisión de diseño versionada separadamente.
+
+\section{Interpretación y pendientes de envío}
+Los resultados demostrados no requieren más semillas ni cambiar motor. Requieren etiquetas precisas: desarrollo frente a validación, primario frente a secundario, descriptor digital frente a respuesta perceptual, grafo frente a bosque y reducción seleccionada frente a estado global. Page no es una cota, información mutua no es sólo entrelazamiento y entropía espectral no es entropía cuántica. No se deriva conclusión holográfica, de espacio-tiempo ni de amplitudes de dispersión.
+
+
+\end{document}

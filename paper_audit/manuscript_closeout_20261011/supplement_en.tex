@@ -1,0 +1,228 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}\usepackage[T1]{fontenc}\usepackage{lmodern,amsmath,amssymb,booktabs,longtable,graphicx,xurl,microtype}
+\usepackage[english]{babel}
+\usepackage[hidelinks]{hyperref}
+\title{Online Resource 1: additional methods, results, and proofs}\author{}\date{11 October 2026}\begin{document}\maketitle
+
+\section{Scope, inputs, and reproduction}
+This resource supplements the computational characterization of the frozen instrument. The primary cohorts are development 1000--1099 and prospective validation 3000--3099, each with 100 seeds, 11 depths, and two modes. The earlier 2000--2099 cohort, technical pilot, external phase-family states, and synthetic forest controls are distinct evidence sets; they are not pooled with the primary observations. Five corrected RQs preserve the useful part of the original roadmap. Unperformed tasks, hardware tests, interface evaluation, and human learning studies are not represented as completed.
+
+The companion package includes all 2,200-row analysis tables for each primary cohort, recorded validation predictions, compact result tables, metadata-derived method specifications, frozen renderer source, and certificates. The full remaining-evidence ZIP is also included for independent inspection of validation matrices, descriptors, metadata, and control outputs. It does not contain all original validation statevectors, QPY circuits, and WAVs. The authors retain those in the generated runs and must archive them with a persistent identifier before claiming complete public availability. This resource does not invent such an identifier.
+
+The local protocol was finalized on 11 October 2026 at 07:10:02 UTC and committed as \texttt{e968ba6d760cf6931c76ab39f1b698a871075249}, before generating the new cohort. Development and the prior 2000--2099 results were already inspected. The protocol does not constitute public preregistration. Its adendum fixes the new seed range, distance feature scaling from development, and forest-control observations. Generation and execution records are preserved separately from statistical conclusions.
+
+\section{Complete validation results}
+All CIs below are 95\% and resample seeds, not output rows or control replicates. RQ3 has 20 BH-adjusted tests; RQ4 has six; distance analysis has four. Other control CIs are pointwise descriptive. Values in tables are rounded for readability; CSVs retain precision.
+\subsection{RQ3: stereo by layer}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrrr}
+\toprule
+Mode & Layer & $\rho$ & $p$ & $q_{\rm BH}$ \\
+\midrule\endhead
+BFS & 1 & $-0.6387$ & $0.000010$ & $0.000040$ \\
+BFS & 2 & $-0.1977$ & $0.048690$ & $0.096017$ \\
+BFS & 3 & $-0.7439$ & $0.000010$ & $0.000040$ \\
+BFS & 4 & $-0.4664$ & $0.000030$ & $0.000100$ \\
+BFS & 5 & $0.1371$ & $0.173768$ & $0.248240$ \\
+BFS & 6 & $0.0590$ & $0.560954$ & $0.590478$ \\
+BFS & 7 & $-0.1938$ & $0.052809$ & $0.096017$ \\
+BFS & 8 & $-0.0417$ & $0.679563$ & $0.679563$ \\
+BFS & 9 & $-0.1486$ & $0.139109$ & $0.231848$ \\
+BFS & 10 & $-0.0763$ & $0.450665$ & $0.531889$ \\
+DFS & 1 & $-0.6365$ & $0.000010$ & $0.000040$ \\
+DFS & 2 & $-0.2690$ & $0.006880$ & $0.019657$ \\
+DFS & 3 & $-0.8340$ & $0.000010$ & $0.000040$ \\
+DFS & 4 & $-0.5883$ & $0.000010$ & $0.000040$ \\
+DFS & 5 & $0.0756$ & $0.452105$ & $0.531889$ \\
+DFS & 6 & $0.0643$ & $0.524445$ & $0.582716$ \\
+DFS & 7 & $-0.2437$ & $0.014760$ & $0.032800$ \\
+DFS & 8 & $-0.0874$ & $0.385956$ & $0.514608$ \\
+DFS & 9 & $-0.1393$ & $0.166528$ & $0.248240$ \\
+DFS & 10 & $-0.2615$ & $0.008550$ & $0.021375$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{RQ5: all models}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{lllrrr}
+\toprule
+Mode & Target & Model & MSE & RMSE & $R^2$ \\
+\midrule\endhead
+BFS & duration & M0 & $0.7073608$ & $0.841047$ & $0.304132$ \\
+BFS & duration & M1 & $0.7088805$ & $0.841950$ & $0.302637$ \\
+BFS & duration & M2 & $0.7092457$ & $0.842167$ & $0.302278$ \\
+BFS & flux & M0 & $0.0002109$ & $0.014522$ & $0.711103$ \\
+BFS & flux & M1 & $0.0002043$ & $0.014295$ & $0.720081$ \\
+BFS & flux & M2 & $0.0002044$ & $0.014297$ & $0.719999$ \\
+DFS & duration & M0 & $0.0027359$ & $0.052306$ & $0.998626$ \\
+DFS & duration & M1 & $0.0021759$ & $0.046646$ & $0.998907$ \\
+DFS & duration & M2 & $0.0003914$ & $0.019784$ & $0.999803$ \\
+DFS & flux & M0 & $1.714\times10^{-6}$ & $0.001309$ & $0.996780$ \\
+DFS & flux & M1 & $1.715\times10^{-6}$ & $0.001309$ & $0.996780$ \\
+DFS & flux & M2 & $1.683\times10^{-6}$ & $0.001297$ & $0.996839$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{RQ5: MSE gain and fixed-training CI}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrr}
+\toprule
+Mode & Target & $\Delta$ & 95\% CI \\
+\midrule\endhead
+BFS & duration & $-0.0003652$ & $[-0.0031547, 0.0023831]$ \\
+BFS & flux & $-6.030\times10^{-8}$ & $[-1.597\times10^{-6}, 1.426\times10^{-6}]$ \\
+DFS & duration & $0.0017845$ & $[0.0015241, 0.0020629]$ \\
+DFS & flux & $3.169\times10^{-8}$ & $[1.353\times10^{-9}, 6.232\times10^{-8}]$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{Controls: all secondary contrasts}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{lllrr}
+\toprule
+Control & Mode & Descriptor & Change & 95\% CI \\
+\midrule\endhead
+Tree & BFS & Duration (s) & $-0.42538$ & $[-0.52068, -0.33835]$ \\
+Tree & DFS & Duration (s) & $0$ & $[0, 0]$ \\
+Weights & BFS & Duration (s) & $0.01740$ & $[0.01551, 0.01943]$ \\
+Weights & DFS & Duration (s) & $0$ & $[0, 0]$ \\
+Tree & BFS & RMS & $-0.00011$ & $[-0.00020, -2.733\times10^{-5}]$ \\
+Tree & DFS & RMS & $0.00013$ & $[0.00012, 0.00014]$ \\
+Weights & BFS & RMS & $0.00011$ & $[9.615\times10^{-5}, 0.00012]$ \\
+Weights & DFS & RMS & $0.00014$ & $[0.00013, 0.00015]$ \\
+Tree & BFS & Centroid (Hz) & $-1.27998$ & $[-3.64437, 1.16756]$ \\
+Tree & DFS & Centroid (Hz) & $-0.53406$ & $[-0.89137, -0.17305]$ \\
+Weights & BFS & Centroid (Hz) & $-1.38441$ & $[-1.78462, -0.98207]$ \\
+Weights & DFS & Centroid (Hz) & $-0.29888$ & $[-0.64601, 0.02913]$ \\
+Tree & BFS & Bandwidth (Hz) & $3.82191$ & $[1.30073, 6.42446]$ \\
+Tree & DFS & Bandwidth (Hz) & $0.04187$ & $[-0.01077, 0.09709]$ \\
+Weights & BFS & Bandwidth (Hz) & $-0.73778$ & $[-0.88519, -0.59667]$ \\
+Weights & DFS & Bandwidth (Hz) & $-0.00402$ & $[-0.03566, 0.02831]$ \\
+Tree & BFS & Spectral entropy & $0.07188$ & $[0.04804, 0.09644]$ \\
+Tree & DFS & Spectral entropy & $0.00037$ & $[3.533\times10^{-5}, 0.00071]$ \\
+Weights & BFS & Spectral entropy & $-0.00709$ & $[-0.00794, -0.00629]$ \\
+Weights & DFS & Spectral entropy & $2.692\times10^{-5}$ & $[-0.00026, 0.00031]$ \\
+Tree & BFS & Flux & $0.00186$ & $[0.00045, 0.00324]$ \\
+Tree & DFS & Flux & $0.00017$ & $[8.604\times10^{-5}, 0.00025]$ \\
+Weights & BFS & Flux & $-0.00023$ & $[-0.00033, -0.00013]$ \\
+Weights & DFS & Flux & $-3.667\times10^{-5}$ & $[-9.182\times10^{-5}, 1.925\times10^{-5}]$ \\
+Tree & BFS & Stereo correlation & $0.00586$ & $[0.00037, 0.01175]$ \\
+Tree & DFS & Stereo correlation & $0.00016$ & $[-0.00058, 0.00087]$ \\
+Weights & BFS & Stereo correlation & $0.00047$ & $[-0.00056, 0.00151]$ \\
+Weights & DFS & Stereo correlation & $0.00012$ & $[-0.00066, 0.00087]$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{Controls: frontier structure}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrr}
+\toprule
+Control & Measure & Change & 95\% CI \\
+\midrule\endhead
+Tree & Frontiers & $-0.7905$ & $[-0.9517, -0.6435]$ \\
+Weights & Frontiers & $0$ & $[0, 0]$ \\
+Tree & Maximum width & $0.7244$ & $[0.6462, 0.8029]$ \\
+Weights & Maximum width & $0$ & $[0, 0]$ \\
+\bottomrule
+\end{longtable}}
+
+\subsection{Distances by layer}
+{\small\setlength{\tabcolsep}{5pt}
+\begin{longtable}{llrr}
+\toprule
+Mode & Layer & $\rho$ Bloch & $\rho$ MI \\
+\midrule\endhead
+BFS & 1 & $0.54608$ & -- \\
+BFS & 2 & $0.21795$ & $0.13598$ \\
+BFS & 3 & $-0.00275$ & $0.02587$ \\
+BFS & 4 & $0.06408$ & $0.03317$ \\
+BFS & 5 & $-0.03942$ & $-0.05403$ \\
+BFS & 6 & $0.03655$ & $-0.10372$ \\
+BFS & 7 & $0.05731$ & $-0.12601$ \\
+BFS & 8 & $-0.03177$ & $0.03798$ \\
+BFS & 9 & $0.00531$ & $-0.01570$ \\
+BFS & 10 & $-0.04488$ & $-0.02636$ \\
+DFS & 1 & $0.54063$ & -- \\
+DFS & 2 & $0.27032$ & $0.15726$ \\
+DFS & 3 & $0.17174$ & $0.13244$ \\
+DFS & 4 & $0.10509$ & $0.06350$ \\
+DFS & 5 & $0.06962$ & $0.00464$ \\
+DFS & 6 & $0.15910$ & $0.03644$ \\
+DFS & 7 & $0.06597$ & $-0.06520$ \\
+DFS & 8 & $0.07267$ & $0.04947$ \\
+DFS & 9 & $0.01169$ & $-0.06816$ \\
+DFS & 10 & $0.08966$ & $-0.01317$ \\
+\bottomrule
+\end{longtable}}
+
+
+\section{Exact temporal identities}
+\subsection{DFS: an invariant of component count and weight multiset}
+Let a forest have $n$ nodes, $c$ components, and edge weights $w_e>10^{-10}$ in $[0,2]$ bits. DFS visits every node once and every nonroot node inherits exactly one edge. There are $c$ root events, $n-c$ nonroot events, and $c-1$ separators. Therefore
+\[
+T_{\rm DFS}=c\tau_r+\sum_e(\tau_{\max}-\beta w_e)+(c-1)\tau_g,
+\]
+where $\tau_r=0.30$, $\tau_{\max}=0.60$, $\beta=0.25$, and $\tau_g=0.12$ in seconds. For $n=15$, this is $8.88-0.18c-0.25\sum_e w_e$. Reordering events, moving weights between edges, or changing adjacency while retaining component weight multisets cannot alter this sum.
+
+The implemented sample count is stronger than an approximate continuous-time identity:
+\[
+N_{\rm DFS}=c\operatorname{round}(f_s\tau_r)+\sum_e\operatorname{round}[f_s(0.60-0.25w_e)]+(c-1)\operatorname{round}(f_s\tau_g).
+\]
+Positive event durations ensure the renderer's minimum-one-sample guard does not intervene. This sum is also invariant to the specified controls. An independent Kruskal reconstruction of the original forests gives all 1,100 recorded validation DFS durations within floating-point residual $1.78\times10^{-15}$ s. All 16,000 control differences are exactly zero in the supplied digital durations. This statement concerns length, not equality of sample arrays or event ordering.
+
+\subsection{BFS: frontier-dependent averaging}
+Each component contributes one root frontier. Let $F$ be the total number of nonroot frontiers and $\mu_j$ their mean positive incoming weights. Then
+\[
+T_{\rm BFS}=c\tau_r+F\tau_{\max}-\beta\sum_{j=1}^F\mu_j+(c-1)\tau_g.
+\]
+Moving weights on a fixed tree leaves its frontiers unchanged but can change their means, because frontier widths need not be equal. Changing the tree can also change $F$ and widths. Tree controls retain components and weights but not degree sequence; a causal attribution exclusively to topology is not identified. Original and synthetic forests share Bloch inputs, not necessarily a valid parent quantum state.
+
+\section{Physical-state non-identifiability certificate}
+\subsection{Preparation and phase form}
+Let $A=\{0,\ldots,6\}$, $B=\{7,\ldots,14\}$, with cycle edges $E_A$ and $E_B$. Starting from $|+\rangle^{\otimes15}$, apply internal CZ gates and seven matching controlled phases $\operatorname{CP}(\alpha_i)$ on $(i,7+i)$. The resulting amplitudes have uniform modulus and phase
+\[
+\Phi(x)=\pi\sum_{(i,j)\in E_A\cup E_B}x_ix_j+\sum_{i=0}^{6}\alpha_i x_i x_{7+i}.
+\]
+All gates are unitary and all phases may be arbitrary real numbers. This is an external physical preparation, not a sample from the random-circuit ensemble. The internal cycle graph represents preparation gates, whereas the engine's MI graph represents reduced-state correlations; these graphs must not be identified.
+
+\subsection{Every one- and two-qubit marginal is maximally mixed}
+For a retained set $T$ of one or two qubits, uniform amplitudes give uniform diagonal entries $2^{-|T|}$. For an off-diagonal entry, let $F\subseteq T$ be the nonempty set of retained bits that change between bra and ket. Internal CZ phases generate a factor $(-1)^{x_w}$ for each traced bit $w$ adjacent to an odd number of flipped bits. The matching-phase difference depends only on traced matching partners of the flipped bits.
+
+There is always an internal odd neighbor $w\notin T$ that is not any of those matching partners. If one bit flips, it has two internal neighbors and at most one can be the other retained bit; its matching partner is in the opposite block. If two bits in one block flip, their neighborhoods on a cycle of length seven or eight differ on at least two vertices outside the pair, while matching partners lie in the other block. If one bit in each block flips, the flipped $A$ bit has two internal neighbors outside $T$; the flipped $B$ bit can have at most one matching partner in $A$, leaving at least one unaffected neighbor. The unpaired qubit 14 introduces no additional matching dependence.
+
+Summing over $x_w=0,1$ cancels the off-diagonal entry exactly, for any phase vector. Thus $\rho_i=\mathbb I_2/2$ and $\rho_{ij}=\mathbb I_4/4$. The companion CSV enumerates all $15+3\binom{15}{2}=330$ retained-set/flip-set cases and an explicit cancellation witness for each. This is a finite support check of the proof, not a statistical sample of phase values.
+
+\subsection{Cut entropy despite identical low-order marginals}
+All preparation gates commute. Apply the internal cycles last as $U_A\otimes U_B$; such block-local unitaries preserve the Schmidt spectrum of the cut. Before them, there are seven independent pairs $\operatorname{CP}(\alpha_i)|++\rangle$ and one unpaired $|+\rangle$. A pair's reduced eigenvalues are $\cos^2(\alpha_i/4)$ and $\sin^2(\alpha_i/4)$, up to ordering. Entropy additivity yields
+\[
+S_A=\sum_{i=0}^{6}h_2\left(\sin^2\frac{\alpha_i}{4}\right).
+\]
+When $\alpha_i=\pi t$ for all $i$ and $t\in[0,1]$, this becomes $7h_2(\sin^2(\pi t/4))$, continuous and strictly increasing from 0 to 7 bits. At the zero-cut-entropy endpoint, the two blocks still contain internal graph-state entanglement. The family is two-uniform, not claimed to be an absolutely maximally entangled 15-qubit family.
+
+Every state gives $r_i=0$, $L_i=1$, and $I_{ij}=0$ to the representation. Consequently the engine receives 15 isolated nodes and the same neutral carriers and pans. It produces identical final audio within each fixed mode, root, and configuration. The claim does not say that BFS and DFS equal one another, nor that complete preparation histories have identical audio. More generally, identical one- and two-qubit marginals suffice for identical engine inputs, but the engine does not encode all information within the two-qubit marginals either.
+
+The numerical certificate contains nine common-phase cases and eight heterogeneous phase vectors, with single- and pair-marginal residuals at most $1.37\times10^{-16}$ and $1.67\times10^{-16}$ in independent calculations. Archived original-engine checks report exact waveform equality in each mode; independent Schmidt-spectrum calculations agree with the entropy formula within $10^{-13}$ bits. The waveform identity is a mathematical statement for exact descriptors. Floating-point checks corroborate the tested cases, not an exhaustive set of numerical phase encodings; cancellation and the Schmidt argument prove the continuous family. These tests are separate from the 100-seed holdout.
+
+\subsection{Optimal worst-case estimation error}
+Let $Y$ be an estimator output from the final waveform, possibly using random bits independent of the unknown preparation. Its distribution is identical over this family. The entropy endpoints give
+\[
+\mathbb E|Y|+\mathbb E|Y-7|\ge7,
+\]
+so worst-case expected absolute error is at least 3.5 bits. Also,
+\[
+\tfrac12\{\mathbb E Y^2+\mathbb E(Y-7)^2\}=\mathbb E(Y-3.5)^2+12.25\ge12.25.
+\]
+The constant $Y=3.5$ achieves both bounds over the full interval, proving minimax optimality. These are expected-risk statements, not a statement that every output is wrong by 3.5 bits for every possible state. They require no prior, no neural-network assumption, and no training protocol. They exclude universal inference from this final waveform; they do not exclude distribution-specific prediction, inference from additional observables, or use of state-identifying metadata.
+
+\section{Azimuth seam and continuity}
+Consider the equatorial pure states $(|0\rangle+e^{\pm\mathrm i\epsilon}|1\rangle)/\sqrt2$ with $0<\epsilon<\pi/2$. Their trace distance is $\sin\epsilon$. Both voices have the same frequency, amplitude, and envelope; let the shared mono signal have squared norm $E>0$. The gain vectors have angles $\epsilon/4$ and $\pi/2-\epsilon/4$; their dot product is $\sin(\epsilon/2)$. Hence
+\[
+\frac{\|s_+-s_-\|_2^2}{\|s_+\|_2^2+\|s_-\|_2^2}=1-\sin(\epsilon/2)\longrightarrow1.
+\]
+The denominator fixes the normalization and prevents conflation with dimensional audio energy. A physical-state distance tending to zero therefore need not imply a small waveform distance. This isolated-voice construction proves failure of universal continuity; it does not quantify human detectability or the frequency of such transitions in a particular interface. The mapping was retained to preserve the audited V1 dataset. A repair is a separately versioned design decision.
+
+\section{Interpretation and remaining submission tasks}
+The demonstrated findings do not require another seed batch or a change of engine. They require accurate labels: development versus held-out validation, primary versus secondary, digital descriptor versus perceptual outcome, full graph versus forest, and selected reduction versus global state. Page's mean is not an entropy bound, pairwise MI is not solely entanglement, and spectral entropy is not quantum entropy. No holographic, spacetime, or scattering-amplitude conclusion follows.
+
+
+\end{document}

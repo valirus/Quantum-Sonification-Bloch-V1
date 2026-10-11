@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "states": 17,
+  "symbolic_cases": 330,
+  "max_single_error": 1.3625932677369208e-16,
+  "max_pair_error": 1.6653345369377348e-16,
+  "max_entropy_error": 4.484797105340963e-15,
+  "renderer_executed": false,
+  "scope": "External physical family, final snapshot; not RQC holdout."
+}

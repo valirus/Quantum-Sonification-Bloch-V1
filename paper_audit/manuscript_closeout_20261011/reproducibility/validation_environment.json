@@ -1,0 +1,8 @@
+{
+  "python": "3.11.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.1",
+  "networkx": "3.6.1",
+  "qiskit": "2.3.0",
+  "git_commit": "e968ba6d760cf6931c76ab39f1b698a871075249"
+}

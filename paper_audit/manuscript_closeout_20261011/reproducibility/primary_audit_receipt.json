@@ -1,0 +1,30 @@
+{
+  "development": {
+    "rows": 2200,
+    "seeds": 100,
+    "missing_values": 0,
+    "duplicate_keys": 0
+  },
+  "validation": {
+    "rows": 2200,
+    "seeds": 100,
+    "missing_values": 0,
+    "duplicate_keys": 0
+  },
+  "historical_development_max_numeric_error": 0.0,
+  "manifest_passed_seeds": 100,
+  "model_predictions_recomputed": 13200,
+  "prediction_max_absolute_error": 8.881784197001252e-15,
+  "reported_metrics_max_absolute_error": 1.2305712004945235e-12,
+  "primary_criterion_met": true,
+  "scope": "Audit of supplied CSVs and protocol; does not independently inspect WSL engine files or regenerate WAV/statevectors.",
+  "input_sha256": {
+    "paper_audit/next_steps_kit/VALIDATION_PROTOCOL_3000_3099.md": "d55bfb10362ff31a9c40499f0dcb3c08bf0662255f54395e0c6d29acb9930231",
+    "paper_audit/next_steps_kit/input_current_100/analysis_dataset.csv": "5264dec8662f8de09ff1aa7383bad2fee6ddb808f808af36fc56413fd250d9b6",
+    "outputs/validation_3000_3099/dataset_manifest.csv": "780749f0f35ed6e558d92ae6765acf4d93ae19550e6855183bdd7fbafdd073fe",
+    "outputs/paper_audit/external_validation_3000_3099/validation_predictions.csv": "44b77240da250640eb866d678251241682a2454de4266c6d71f57782d0424b08",
+    "outputs/paper_audit/external_validation_3000_3099/methods.json": "d9f839033150e20774c4f906a6a8e3157655a4e6deb6d07ad0f71791a8a243bd",
+    "outputs/paper_audit/external_validation_3000_3099/validation_metrics.csv": "dce4aee553d0a1c358a1f3d99dea514824d15231ec2edce96af5212294f8779f",
+    "outputs/paper_audit/validation_3000_3099_tables/analysis_dataset.csv": "76f7e7bfa8c510c8aedb5cef72d0fbdbfd8db97cb356b5f34669b88f7356c870"
+  }
+}
