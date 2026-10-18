@@ -1,0 +1,24 @@
+{
+  "release": "quantumhub-branding-1",
+  "ui_base": "sonification-ui-v3",
+  "presentation_only": true,
+  "quantumhub_url": "https://www.qhubperu.com/",
+  "mentores": [
+    "Rocio Carhuancho",
+    "Dominique Heger"
+  ],
+  "investigadores_desarrolladores": [
+    "Valentino Gamboa",
+    "Vania Pachas",
+    "Dayana Gomez",
+    "Javier Jara",
+    "Cristopher Lévano"
+  ],
+  "affiliation": "Quantum software researchers · QuantumHub Perú",
+  "logos": {
+    "quantumhub-wordmark-dark.svg": "6e317cf11179cde9ee325f994b96e999ac3d158d120fd52887ba284fc3c61352",
+    "quantumhub-wordmark-light.svg": "2276c7323dd6af8164020b0fd9aed328fa2043d75ad32b7de2f64abaec2a4e97",
+    "quantum-sonification-monochrome.svg": "e019727f6d75cfe9073943e2b47568a0bd4356a7e13c50c560fca37b05787c29",
+    "quantum-sonification-mark.svg": "5479f117954a6f28c3ca92e9581672732bba7d2b033cc5abecace36b33fe5697"
+  }
+}

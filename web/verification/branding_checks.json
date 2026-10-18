@@ -1,0 +1,20 @@
+{
+  "release": "quantumhub-branding-1",
+  "recorded_utc": "2026-10-18T19:58:40.623723+00:00",
+  "upstream_protected_files": 76,
+  "unchanged_core_ui_files": 17,
+  "unchanged_scientific_public_assets": 54,
+  "unchanged_original_test_files": 5,
+  "unit_tests_passed": 49,
+  "typescript": "passed",
+  "production_build": "passed",
+  "credit_entries_in_rendered_footer": 7,
+  "quantumhub_link": "https://www.qhubperu.com/",
+  "svg_embedded_rasters": 0,
+  "svg_external_resources": 0,
+  "logos_visually_inspected_as_rendered_svgs": true,
+  "browser_qa_this_run": "not performed; automated access to the deployed domain was previously blocked by Cloudflare; verify after deployment in the user browser",
+  "static_file_count": 67,
+  "static_bytes": 12440158,
+  "largest_static_file_bytes": 1478026
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 258" role="img" aria-labelledby="title desc">
+<title id="title">Quantum Sonification</title>
+<desc id="desc">Símbolo cuántico con eje 0–1 y forma de onda. Reconstrucción geométrica de la referencia suministrada.</desc>
+<g fill="none" stroke="#181a20" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="6.8" d="M88 31C55 31 29 56 29 88c0 18 8 32 22 42-13 9-21 23-21 42 0 30 25 53 58 53s58-23 58-53c0-19-8-33-21-42 14-10 22-24 22-42 0-32-26-57-59-57Z"/>
+<path stroke-width="6.4" d="M47 115C2 120 2 145 45 151m85-36c44 5 44 30 1 36"/>
+<path stroke-width="5.7" d="m83 33 10 190"/>
+<path stroke-width="3.2" d="M52 122v16m9-29v45m9-58v73m9-84v96m18-104v100m9-78v68m9-50v40m9-28v17"/>
+<ellipse cx="82.3" cy="12.5" rx="4.2" ry="6.4" stroke-width="2.8"/>
+</g>
+<path fill="#181a20" d="m91 239 7-5h4v17h-4v-12l-5 3Z"/>
+</svg>
