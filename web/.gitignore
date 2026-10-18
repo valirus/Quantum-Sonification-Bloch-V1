@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+coverage/
+*.local
+# The scientific repository ignores generated WAVs globally. Ship these examples.
+!public/sonification/**/*.wav

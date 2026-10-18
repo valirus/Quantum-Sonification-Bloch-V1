@@ -1,0 +1,39 @@
+{
+  "scientific_scope": "Deterministic illustrative case; not a statistical cohort",
+  "num_qubits": 2,
+  "layers": 2,
+  "seed": null,
+  "preferred_root": 0,
+  "edge_tolerance": 1e-10,
+  "audio_config": {
+    "sample_rate": 22050,
+    "frequency_min_hz": 110.0,
+    "frequency_max_hz": 880.0,
+    "amplitude_floor": 0.12,
+    "voice_gain": 0.22,
+    "am_rate_hz": 6.0,
+    "am_depth_max": 0.3,
+    "bloch_direction_epsilon": 1e-08,
+    "attack_fraction_bfs": 0.2,
+    "attack_fraction_dfs": 0.05,
+    "event_duration_min_sec": 0.1,
+    "event_duration_max_sec": 0.6,
+    "root_duration_sec": 0.3,
+    "component_gap_sec": 0.12,
+    "layer_gap_sec": 0.2,
+    "combined_bfs_gain": 0.5,
+    "combined_dfs_gain": 0.5
+  },
+  "mapping": {
+    "theta": "Exponential tone frequency",
+    "phi": "Equal-power stereo pan",
+    "bloch_radius": "Base amplitude",
+    "normalized_linear_entropy": "Amplitude modulation depth",
+    "mutual_information": "Forest weights and event duration"
+  },
+  "dataset": "didactic_examples_v1",
+  "state_resolution": "End of the labelled operation block",
+  "bit_order": "Qiskit little-endian; bitstrings written q[n-1]...q0",
+  "renderer_sha256": "23e747dfe61ff50cc149f7395588fca86488e77f3a18e11fdfa8f87590630ad5",
+  "descriptors_sha256": "92fac14aa95d286fb305198675881d8209a76c2074cd00bae582a8410c517361"
+}

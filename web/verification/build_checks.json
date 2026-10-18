@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-10-18T18:47:00.668530+00:00",
+  "command": "npm run build",
+  "node": "v24.19.0",
+  "npm": "11.9.0",
+  "vite": "7.3.6",
+  "vitest": "3.2.7",
+  "unit_test_files_passed": 5,
+  "unit_tests_passed": 49,
+  "upstream_reference_files_verified": 76,
+  "typescript": "passed",
+  "build": "passed",
+  "production_asset_paths": "passed, including FFT worker",
+  "scientific_assets_copied_byte_identically": true,
+  "static_file_count": 62,
+  "static_bytes": 12396603,
+  "largest_static_file_bytes": 1478026,
+  "browser_qa_this_run": "not performed; no supported browser QA capability available in this environment",
+  "post_deployment_check_required": "Play all modes, change sample, seek, verify circuit and signal views on the actual public HTTPS URL."
+}

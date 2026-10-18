@@ -1,0 +1,4 @@
+layer,mean_bloch_radius,mean_von_neumann_entropy,central_cut_entanglement_entropy_bits,central_cut_entanglement_entropy_normalized,total_mutual_information,mean_pair_mutual_information,max_pair_mutual_information,positive_edge_density,edge_weight_entropy,mean_node_strength,max_node_strength,backbone_edges,backbone_components
+0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+1,0.9999999999999998,1.6017132519074586e-16,1.4415419267167124e-15,1.4415419267167124e-15,0.0,0.0,3.2034265038149167e-16,0.0,0.0,0.0,0.0,0.0,2.0
+2,0.0,1.0,1.0,1.0,1.9999999999999987,1.9999999999999987,1.9999999999999987,1.0,-0.0,1.9999999999999987,1.9999999999999987,1.0,1.0

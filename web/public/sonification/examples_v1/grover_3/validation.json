@@ -1,0 +1,28 @@
+{
+  "id": "grover_3",
+  "status": "PASS",
+  "snapshots": 6,
+  "gate_operations": 35,
+  "checks": [
+    {
+      "name": "Grover marked probability after iteration 1",
+      "value": 0.7812499999999989,
+      "analytic": 0.7812499999999999
+    },
+    {
+      "name": "Grover marked probability after iteration 2",
+      "value": 0.9453124999999978,
+      "analytic": 0.9453125000000001
+    }
+  ],
+  "audio_duration_sec": {
+    "bfs": 7.452154195011338,
+    "dfs": 8.378503401360545,
+    "combined": 8.378503401360545
+  },
+  "audio_sha256": {
+    "bfs": "4df8845dc66b3a4c80f90bcf81062f46e6baf5fba60685ad512f11834529b521",
+    "dfs": "240a8aad816db035631bcbb7fbf11d7dd4c99065a263e9d886243aa2e81a8c76",
+    "combined": "8d72ddfe32e602866d7e28f2c03ab6aedccd44d9c121eb913a4c9029f8fa906e"
+  }
+}

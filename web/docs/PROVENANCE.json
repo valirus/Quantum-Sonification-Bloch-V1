@@ -1,0 +1,20 @@
+{
+  "interface_version": "sonification-ui-v3",
+  "repository": "QuantumHub-Peru/qhub-site",
+  "branch": "feat/sonification-ui-final",
+  "exported_ui_base_commit": "2b84bc268fe43533c5218cb00e2399ec44fb33c3",
+  "original_v3_zip_sha256": "12f87963b7ac73cfc7e6c12dc187da7028b26bc845035f0ea44376fa5984f8b1",
+  "frozen_scientific_engine_commit": "bb31388202666a6ab1a365b912b4e2992429a7c6",
+  "renderer_sha256": "23e747dfe61ff50cc149f7395588fca86488e77f3a18e11fdfa8f87590630ad5",
+  "descriptor_implementation_sha256": "92fac14aa95d286fb305198675881d8209a76c2074cd00bae582a8410c517361",
+  "authoritative_case_environment": "verification/ENVIRONMENT_CORRECTION.json",
+  "statistical_role": "Deterministic illustrative cases, separate from the study cohorts",
+  "documentation_correction_only": true,
+  "installed_ui_files_unchanged": 68,
+  "four_inherited_site_type_fixes": [
+    "src/components/HeroSection.tsx",
+    "src/components/Navbar.tsx",
+    "src/components/PlatformSection.tsx",
+    "src/components/ai-summit/EventMap.tsx"
+  ]
+}

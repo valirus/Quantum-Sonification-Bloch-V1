@@ -1,0 +1,210 @@
+{
+  "version": "1.0.0",
+  "dataset": "didactic_examples_v1",
+  "seeds": [
+    {
+      "id": "bell_2",
+      "seed": null,
+      "label": "BELL · 2 qubits",
+      "kind": "illustrative",
+      "dataset": "didactic_examples_v1",
+      "metadata": "/sonification/examples_v1/bell_2/metadata.json",
+      "layerMetrics": "/sonification/examples_v1/bell_2/layer_metrics.csv",
+      "blochDescriptors": "/sonification/examples_v1/bell_2/bloch_descriptors.csv",
+      "gateManifest": "/sonification/examples_v1/bell_2/gate_manifest.csv",
+      "graphBackbones": "/sonification/examples_v1/bell_2/graph_backbones.json",
+      "miMatrices": "/sonification/examples_v1/bell_2/mi_matrices.json",
+      "segments": {
+        "bfs": "/sonification/examples_v1/bell_2/bfs_segments.csv",
+        "dfs": "/sonification/examples_v1/bell_2/dfs_segments.csv",
+        "mix": "/sonification/examples_v1/bell_2/combined_segments.csv"
+      },
+      "audio": {
+        "bfs": "/sonification/examples_v1/bell_2/audio/bfs_continuous.wav",
+        "dfs": "/sonification/examples_v1/bell_2/audio/dfs_continuous.wav",
+        "mix": "/sonification/examples_v1/bell_2/audio/combined_continuous.wav"
+      },
+      "lesson": {
+        "question": "¿Cómo puede un estado global puro tener estados locales mixtos?",
+        "steps": [
+          {
+            "layer": 0,
+            "label": "Estado inicial |00⟩",
+            "caption": "Qubits separados, cada estado local es puro.",
+            "target_probability": null
+          },
+          {
+            "layer": 1,
+            "label": "H en q0",
+            "caption": "q0 entra en superposición; todavía no hay correlación entre pares.",
+            "target_probability": null
+          },
+          {
+            "layer": 2,
+            "label": "CX de q0 a q1",
+            "caption": "El par forma un estado Bell: sus estados locales son mixtos aunque el estado global es puro.",
+            "target_probability": null
+          }
+        ],
+        "target_bitstring": null,
+        "validation": [
+          {
+            "name": "Bell state fidelity",
+            "value": 0.9999999999999996
+          },
+          {
+            "name": "Bell pair MI bits",
+            "value": 1.9999999999999987
+          },
+          {
+            "name": "Bell central-cut entropy bits",
+            "value": 1.0
+          }
+        ],
+        "statement": "Exact noiseless simulation; illustrative example, not an independent statistical sample."
+      }
+    },
+    {
+      "id": "ghz_3",
+      "seed": null,
+      "label": "GHZ · 3 qubits",
+      "kind": "illustrative",
+      "dataset": "didactic_examples_v1",
+      "metadata": "/sonification/examples_v1/ghz_3/metadata.json",
+      "layerMetrics": "/sonification/examples_v1/ghz_3/layer_metrics.csv",
+      "blochDescriptors": "/sonification/examples_v1/ghz_3/bloch_descriptors.csv",
+      "gateManifest": "/sonification/examples_v1/ghz_3/gate_manifest.csv",
+      "graphBackbones": "/sonification/examples_v1/ghz_3/graph_backbones.json",
+      "miMatrices": "/sonification/examples_v1/ghz_3/mi_matrices.json",
+      "segments": {
+        "bfs": "/sonification/examples_v1/ghz_3/bfs_segments.csv",
+        "dfs": "/sonification/examples_v1/ghz_3/dfs_segments.csv",
+        "mix": "/sonification/examples_v1/ghz_3/combined_segments.csv"
+      },
+      "audio": {
+        "bfs": "/sonification/examples_v1/ghz_3/audio/bfs_continuous.wav",
+        "dfs": "/sonification/examples_v1/ghz_3/audio/dfs_continuous.wav",
+        "mix": "/sonification/examples_v1/ghz_3/audio/combined_continuous.wav"
+      },
+      "lesson": {
+        "question": "¿Cómo puede un estado global puro tener estados locales mixtos?",
+        "steps": [
+          {
+            "layer": 0,
+            "label": "Estado inicial |000⟩",
+            "caption": "Qubits separados, cada estado local es puro.",
+            "target_probability": null
+          },
+          {
+            "layer": 1,
+            "label": "H en q0",
+            "caption": "q0 entra en superposición; todavía no hay correlación entre pares.",
+            "target_probability": null
+          },
+          {
+            "layer": 2,
+            "label": "CX de q0 a q1",
+            "caption": "El par forma un estado Bell: sus estados locales son mixtos aunque el estado global es puro.",
+            "target_probability": null
+          },
+          {
+            "layer": 3,
+            "label": "CX de q1 a q2 · GHZ",
+            "caption": "Las correlaciones abarcan los tres qubits. La MI entre pares no resume todo el estado global.",
+            "target_probability": null
+          }
+        ],
+        "target_bitstring": null,
+        "validation": [
+          {
+            "name": "GHZ state fidelity",
+            "value": 0.9999999999999996
+          },
+          {
+            "name": "GHZ pair MI bits",
+            "value": 1.0
+          }
+        ],
+        "statement": "Exact noiseless simulation; illustrative example, not an independent statistical sample."
+      }
+    },
+    {
+      "id": "grover_3",
+      "seed": null,
+      "label": "Grover · 3 qubits · objetivo 101",
+      "kind": "illustrative",
+      "dataset": "didactic_examples_v1",
+      "metadata": "/sonification/examples_v1/grover_3/metadata.json",
+      "layerMetrics": "/sonification/examples_v1/grover_3/layer_metrics.csv",
+      "blochDescriptors": "/sonification/examples_v1/grover_3/bloch_descriptors.csv",
+      "gateManifest": "/sonification/examples_v1/grover_3/gate_manifest.csv",
+      "graphBackbones": "/sonification/examples_v1/grover_3/graph_backbones.json",
+      "miMatrices": "/sonification/examples_v1/grover_3/mi_matrices.json",
+      "segments": {
+        "bfs": "/sonification/examples_v1/grover_3/bfs_segments.csv",
+        "dfs": "/sonification/examples_v1/grover_3/dfs_segments.csv",
+        "mix": "/sonification/examples_v1/grover_3/combined_segments.csv"
+      },
+      "audio": {
+        "bfs": "/sonification/examples_v1/grover_3/audio/bfs_continuous.wav",
+        "dfs": "/sonification/examples_v1/grover_3/audio/dfs_continuous.wav",
+        "mix": "/sonification/examples_v1/grover_3/audio/combined_continuous.wav"
+      },
+      "lesson": {
+        "question": "¿Qué cambia una fase y qué transforma esa fase en probabilidad?",
+        "steps": [
+          {
+            "layer": 0,
+            "label": "Estado inicial |000⟩",
+            "caption": "Empezamos con tres qubits separados.",
+            "target_probability": 0.0
+          },
+          {
+            "layer": 1,
+            "label": "Preparación uniforme",
+            "caption": "Los ocho resultados tienen probabilidad 1/8; la superposición aún es un producto de estados locales.",
+            "target_probability": 0.12499999999999994
+          },
+          {
+            "layer": 2,
+            "label": "Oráculo · iteración 1",
+            "caption": "El oráculo cambia la fase de |101⟩; por sí solo no cambia las probabilidades de medir la base computacional.",
+            "target_probability": 0.12499999999999994
+          },
+          {
+            "layer": 3,
+            "label": "Difusión · iteración 1",
+            "caption": "La interferencia amplifica el resultado marcado. Su probabilidad se calcula del vector de estado, no del volumen del audio.",
+            "target_probability": 0.7812499999999989
+          },
+          {
+            "layer": 4,
+            "label": "Oráculo · iteración 2",
+            "caption": "El oráculo cambia la fase de |101⟩; por sí solo no cambia las probabilidades de medir la base computacional.",
+            "target_probability": 0.7812499999999989
+          },
+          {
+            "layer": 5,
+            "label": "Difusión · iteración 2",
+            "caption": "La interferencia amplifica el resultado marcado. Su probabilidad se calcula del vector de estado, no del volumen del audio.",
+            "target_probability": 0.9453124999999978
+          }
+        ],
+        "target_bitstring": "101",
+        "validation": [
+          {
+            "name": "Grover marked probability after iteration 1",
+            "value": 0.7812499999999989,
+            "analytic": 0.7812499999999999
+          },
+          {
+            "name": "Grover marked probability after iteration 2",
+            "value": 0.9453124999999978,
+            "analytic": 0.9453125000000001
+          }
+        ],
+        "statement": "Exact noiseless simulation; illustrative example, not an independent statistical sample."
+      }
+    }
+  ]
+}

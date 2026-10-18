@@ -1,0 +1,152 @@
+{
+  "recorded_utc": "2026-10-18T18:46:01.553323+00:00",
+  "decoder": "ffmpeg, decoded f32le at original sample rate and channels; no normalization or resampling",
+  "note": "PCM hashes demonstrate distinct decoded waveforms within these four supplied cases; this is not a test of perceptual discriminability. MP3 assets remain compressed source copies and are not substituted for WAVs in scientific analyses.",
+  "cases": [
+    {
+      "case": "seed_001060",
+      "mode": "bfs",
+      "path": "public/sonification/audio/seed_001060/bfs_continuous.mp3",
+      "codec_container": "mp3",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 50.150068027210885,
+      "last_segment_end_sec": 50.150068027210885,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "6fae1470ebfc80621220259282815b7ea661cbfcb4901627d978443416996361"
+    },
+    {
+      "case": "seed_001060",
+      "mode": "dfs",
+      "path": "public/sonification/audio/seed_001060/dfs_continuous.mp3",
+      "codec_container": "mp3",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 89.12798185941043,
+      "last_segment_end_sec": 89.12798185941043,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "c3a8a296852a6e1393598965743aef6d37e20510eec1267a8618ac0ebe6126eb"
+    },
+    {
+      "case": "seed_001060",
+      "mode": "mix",
+      "path": "public/sonification/audio/seed_001060/combined_continuous.mp3",
+      "codec_container": "mp3",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 89.12798185941043,
+      "last_segment_end_sec": 89.12798185941043,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "c47439440c2477b4d5ab966de8b43d2544e839c6346c4ee050c3db98d93e07af"
+    },
+    {
+      "case": "bell_2",
+      "mode": "bfs",
+      "path": "public/sonification/examples_v1/bell_2/audio/bfs_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 2.24,
+      "last_segment_end_sec": 2.24,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "ca1c97bd8da4ecd5de429e3e490974aafea2493fd0e051af65a16d9d4c8b08a7"
+    },
+    {
+      "case": "bell_2",
+      "mode": "dfs",
+      "path": "public/sonification/examples_v1/bell_2/audio/dfs_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 2.24,
+      "last_segment_end_sec": 2.24,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "e24590b0fce64eadec232d30440f5af01f6f7c04ee07c4df76b11b92e0321ead"
+    },
+    {
+      "case": "bell_2",
+      "mode": "mix",
+      "path": "public/sonification/examples_v1/bell_2/audio/combined_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 2.24,
+      "last_segment_end_sec": 2.24,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "8c9fb5910747700345da8c06675f03306e07a651f4f823f54976e91e4c587ccf"
+    },
+    {
+      "case": "ghz_3",
+      "mode": "bfs",
+      "path": "public/sonification/examples_v1/ghz_3/audio/bfs_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 4.349977324263039,
+      "last_segment_end_sec": 4.349977324263039,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "af85ebd28d9ba2aafbd8e2b80b385ba32c213d71448c00b4fbf7362e42517ec8"
+    },
+    {
+      "case": "ghz_3",
+      "mode": "dfs",
+      "path": "public/sonification/examples_v1/ghz_3/audio/dfs_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 4.699954648526077,
+      "last_segment_end_sec": 4.699954648526077,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "89cc28f09e7b0c29f9543de971f77baf2ba4ccadd2ded2d964f658d8ed050faf"
+    },
+    {
+      "case": "ghz_3",
+      "mode": "mix",
+      "path": "public/sonification/examples_v1/ghz_3/audio/combined_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 4.699954648526077,
+      "last_segment_end_sec": 4.699954648526077,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "3955ad53d8251cd21900518adca8f608fd0fcfb7b6dea24e34bb8f0876d04254"
+    },
+    {
+      "case": "grover_3",
+      "mode": "bfs",
+      "path": "public/sonification/examples_v1/grover_3/audio/bfs_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 7.452154195011338,
+      "last_segment_end_sec": 7.452154195011338,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "b76c167e5720940cb6bebd0565a0cbe64f04d1865de39776719910ed68a916d6"
+    },
+    {
+      "case": "grover_3",
+      "mode": "dfs",
+      "path": "public/sonification/examples_v1/grover_3/audio/dfs_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 8.378503401360545,
+      "last_segment_end_sec": 8.378503401360545,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "955f718f9d639f229740034817666ad218a4fbcc5e2cc8ead5f354faa225cf17"
+    },
+    {
+      "case": "grover_3",
+      "mode": "mix",
+      "path": "public/sonification/examples_v1/grover_3/audio/combined_continuous.wav",
+      "codec_container": "wav",
+      "channels": 2,
+      "sample_rate": 22050,
+      "decoded_duration_sec": 8.378503401360545,
+      "last_segment_end_sec": 8.378503401360545,
+      "duration_difference_sec": 0.0,
+      "decoded_float32_pcm_sha256": "5526340937b54edc7cd6b6ff89dc479b7b764debe29f1f6da38e6bc5cdda2e2d"
+    }
+  ],
+  "pass": true
+}

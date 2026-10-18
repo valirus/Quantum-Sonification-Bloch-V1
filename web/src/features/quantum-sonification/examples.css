@@ -1,0 +1,9 @@
+.qs-example-picker{display:flex;align-items:center;gap:13px;margin:0 0 18px;color:var(--qs-muted);font-size:13px;flex-wrap:wrap}
+.qs-example-picker label{display:flex;gap:10px;align-items:center}.qs-example-picker select{font-size:13px;min-height:40px;max-width:440px}
+.qs-example-picker>span{margin-left:auto;color:#b7a4c3;font-size:12px}
+.qs-example-lesson{margin:0 0 19px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:15px 25px;background:linear-gradient(100deg,#b99acb08,#09090b)}
+.qs-example-lesson h2{font-size:clamp(21px,2vw,27px);max-width:970px}.qs-example-step{margin:12px 0 5px!important;font-size:14px;color:#ead1b1}.qs-example-step strong{font-weight:500}
+.qs-example-lesson>details{grid-column:1/-1;margin-top:3px!important}.qs-target-probability{padding:14px 18px;align-self:start;border:1px solid #6b5135;background:#ffb36905;min-width:220px}
+.qs-target-probability span,.qs-target-probability small{font-size:12px;display:block;color:#c2b7ca}.qs-target-probability strong{display:block;font-size:31px;font-weight:500;color:#ffd3a2;margin:4px 0}
+.qs-circuit-panel .qs-gate[data-multiqubit=true] rect{fill:#251a10;stroke:#d79e65}.qs-circuit-panel .qs-gate[data-selected=true] rect{fill:#543a61;stroke:#ffe5bf;stroke-width:2}
+@media(max-width:760px){.qs-example-picker label{width:100%;align-items:start;flex-direction:column;gap:5px}.qs-example-picker select{width:100%;max-width:none}.qs-example-picker>span{margin:0;font-size:12px}.qs-example-lesson{grid-template-columns:1fr}.qs-target-probability{max-width:100%;min-width:0}.qs-example-lesson>details{grid-column:1}.qs-example-lesson h2{font-size:22px}}

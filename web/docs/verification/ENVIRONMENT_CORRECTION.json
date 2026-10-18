@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-13",
+  "cause": "Coexisting qiskit-1.4.6.dist-info and qiskit-2.1.2.dist-info; imported module and QPY serializer use 2.1.2, while importlib.metadata.version selected 1.4.6.",
+  "imported_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "networkx": "3.3",
+    "qiskit": "2.1.2"
+  },
+  "distribution_metadata": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "networkx": "3.3",
+    "qiskit": "1.4.6"
+  },
+  "generator_fix": "Record imported module __version__; keep distribution metadata and mismatch warnings separately. No quantum or audio code changed.",
+  "original_evidence_preserved": [
+    "generation_manifest_original.json",
+    "EXAMPLES_VALIDATION_original.json"
+  ],
+  "regenerated_reference_files_compared": 65,
+  "changed_reference_files": [],
+  "qpy_headers": [
+    {
+      "file": "bell_2/circuits/layer_000.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "bell_2/circuits/layer_002.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "bell_2/circuits/layer_001.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "grover_3/circuits/layer_004.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "grover_3/circuits/layer_005.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "grover_3/circuits/layer_000.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "grover_3/circuits/layer_002.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "grover_3/circuits/layer_001.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "grover_3/circuits/layer_003.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "ghz_3/circuits/layer_000.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "ghz_3/circuits/layer_002.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "ghz_3/circuits/layer_001.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    },
+    {
+      "file": "ghz_3/circuits/layer_003.qpy",
+      "serialized_qiskit_version": "2.1.2"
+    }
+  ],
+  "ui_runtime_changed": false,
+  "frozen_engine_changed": false
+}

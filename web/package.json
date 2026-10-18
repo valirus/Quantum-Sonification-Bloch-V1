@@ -1,0 +1,36 @@
+{
+  "name": "quantum-sonification-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone, prerecorded scientific sonification explorer. Preserves the audited V3 interface and source assets.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "build": "npm run verify:assets && npm test && npm run typecheck && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "lucide-react": "0.462.0",
+    "papaparse": "5.5.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.16.5",
+    "@types/papaparse": "5.5.2",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
+    "autoprefixer": "10.4.21",
+    "postcss": "8.5.26",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.8.3",
+    "vite": "7.3.6",
+    "vitest": "3.2.7"
+  }
+}

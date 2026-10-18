@@ -1,0 +1,58 @@
+{
+  "scientific_scope": "Bloch descriptors plus all-pairs mutual-information graph",
+  "num_qubits": 15,
+  "layers": 10,
+  "seed": 1060,
+  "preferred_root": 7,
+  "edge_tolerance": 1e-10,
+  "audio_config": {
+    "sample_rate": 22050,
+    "frequency_min_hz": 110.0,
+    "frequency_max_hz": 880.0,
+    "amplitude_floor": 0.12,
+    "voice_gain": 0.22,
+    "am_rate_hz": 6.0,
+    "am_depth_max": 0.3,
+    "bloch_direction_epsilon": 1e-08,
+    "attack_fraction_bfs": 0.2,
+    "attack_fraction_dfs": 0.05,
+    "event_duration_min_sec": 0.1,
+    "event_duration_max_sec": 0.6,
+    "root_duration_sec": 0.3,
+    "component_gap_sec": 0.12,
+    "layer_gap_sec": 0.2,
+    "combined_bfs_gain": 0.5,
+    "combined_dfs_gain": 0.5
+  },
+  "mapping": {
+    "theta": "log-frequency",
+    "phi": "equal-power stereo pan",
+    "bloch_radius": "amplitude with fixed floor",
+    "normalized_linear_entropy": "deterministic amplitude-modulation depth",
+    "mutual_information": "event duration using the fixed 0-to-2-bit range",
+    "graph": "all-pairs MI for analysis; maximum-spanning forest for traversal"
+  },
+  "qft_enabled": false,
+  "statevectors_saved": true,
+  "circuits_saved_as_qpy": true,
+  "gate_manifest_saved": true,
+  "software": {
+    "python": "3.14.0",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "networkx": "3.6.1",
+    "qiskit": "2.5.2",
+    "git_commit": "74f19f64099ede0d4d1d6449bb0f3b2c3c910b35"
+  },
+  "output_roles": {
+    "bloch_descriptors.csv": "per-qubit local quantum descriptors",
+    "layer_metrics.csv": "layer-level quantum summaries",
+    "circuit_metrics.csv": "circuit depth and gate-count summaries",
+    "gate_manifest.csv": "gates introduced at each RQC layer",
+    "circuits/*.qpy": "exact Qiskit circuit snapshots",
+    "statevectors/*.npy": "optional exact complex amplitudes for every layer",
+    "mutual_information_matrices/*.npy": "full all-pairs MI matrices",
+    "audio/bfs and audio/dfs": "primary acoustic observations",
+    "audio/combined and *_continuous.wav": "listening and visualization aids"
+  }
+}

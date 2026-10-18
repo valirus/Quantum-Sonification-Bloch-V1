@@ -1,0 +1,1203 @@
+{
+  "root": 0,
+  "numQubits": 3,
+  "edgeTolerance": 1e-10,
+  "layers": [
+    {
+      "layer": 0,
+      "allEdges": [],
+      "forest": [],
+      "edges": [],
+      "components": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "layout": [
+        {
+          "qubit": 0,
+          "x": 80.0,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 1,
+          "x": 262.5,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 2,
+          "x": 445.0,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        }
+      ],
+      "events": {
+        "bfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.3,
+            "end": 0.42
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.42,
+            "end": 0.72
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.72,
+            "end": 0.84
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.84,
+            "end": 1.14
+          }
+        ],
+        "dfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.3,
+            "end": 0.42
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.42,
+            "end": 0.72
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.72,
+            "end": 0.84
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.84,
+            "end": 1.14
+          }
+        ]
+      },
+      "bfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 2,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        }
+      ],
+      "dfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 2,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "allEdges": [],
+      "forest": [],
+      "edges": [],
+      "components": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "layout": [
+        {
+          "qubit": 0,
+          "x": 80.0,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 1,
+          "x": 262.5,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 2,
+          "x": 445.0,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        }
+      ],
+      "events": {
+        "bfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.3,
+            "end": 0.42
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.42,
+            "end": 0.72
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.72,
+            "end": 0.84
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.84,
+            "end": 1.14
+          }
+        ],
+        "dfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.3,
+            "end": 0.42
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.42,
+            "end": 0.72
+          },
+          {
+            "kind": "silence",
+            "nodes": [],
+            "edges": [],
+            "depth": null,
+            "incomingMi": null,
+            "start": 0.72,
+            "end": 0.84
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0.84,
+            "end": 1.14
+          }
+        ]
+      },
+      "bfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 2,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        }
+      ],
+      "dfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 2,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "allEdges": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.8112781244591337
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.8112781244591336
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.8112781244591336
+        }
+      ],
+      "forest": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.8112781244591337
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.8112781244591336
+        }
+      ],
+      "edges": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.8112781244591337
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.8112781244591336
+        }
+      ],
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "layout": [
+        {
+          "qubit": 0,
+          "x": 262.5,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 1,
+          "x": 80.0,
+          "y": 205,
+          "depth": 1,
+          "parent": 0,
+          "incomingWeight": 0.8112781244591337
+        },
+        {
+          "qubit": 2,
+          "x": 445.0,
+          "y": 205,
+          "depth": 1,
+          "parent": 0,
+          "incomingWeight": 0.8112781244591336
+        }
+      ],
+      "events": {
+        "bfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1,
+              2
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 1
+              },
+              {
+                "source": 0,
+                "target": 2
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.8112781244591336,
+            "start": 0.3,
+            "end": 0.69718820861678
+          }
+        ],
+        "dfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 1
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.8112781244591337,
+            "start": 0.3,
+            "end": 0.69718820861678
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 2
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.8112781244591336,
+            "start": 0.69718820861678,
+            "end": 1.0943764172335602
+          }
+        ]
+      },
+      "bfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.8112781244591337
+        },
+        {
+          "qubit": 2,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.8112781244591336
+        }
+      ],
+      "dfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.8112781244591337
+        },
+        {
+          "qubit": 2,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.8112781244591336
+        }
+      ]
+    },
+    {
+      "layer": 3,
+      "allEdges": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.28344193552946095
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.2834419355294607
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.28344193552945973
+        }
+      ],
+      "forest": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.28344193552946095
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.2834419355294607
+        }
+      ],
+      "edges": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.28344193552946095
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.2834419355294607
+        }
+      ],
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "layout": [
+        {
+          "qubit": 0,
+          "x": 262.5,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 1,
+          "x": 80.0,
+          "y": 205,
+          "depth": 1,
+          "parent": 0,
+          "incomingWeight": 0.28344193552946095
+        },
+        {
+          "qubit": 2,
+          "x": 445.0,
+          "y": 205,
+          "depth": 1,
+          "parent": 0,
+          "incomingWeight": 0.2834419355294607
+        }
+      ],
+      "events": {
+        "bfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1,
+              2
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 1
+              },
+              {
+                "source": 0,
+                "target": 2
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.28344193552946084,
+            "start": 0.3,
+            "end": 0.8291609977324264
+          }
+        ],
+        "dfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 1
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.28344193552946095,
+            "start": 0.3,
+            "end": 0.8291609977324264
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 2
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.2834419355294607,
+            "start": 0.8291609977324264,
+            "end": 1.3583219954648527
+          }
+        ]
+      },
+      "bfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.28344193552946095
+        },
+        {
+          "qubit": 2,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.2834419355294607
+        }
+      ],
+      "dfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.28344193552946095
+        },
+        {
+          "qubit": 2,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.2834419355294607
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "allEdges": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.5288643610650137
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.5288643610650153
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.5288643610650147
+        }
+      ],
+      "forest": [
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.5288643610650153
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.5288643610650147
+        }
+      ],
+      "edges": [
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.5288643610650153
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.5288643610650147
+        }
+      ],
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "layout": [
+        {
+          "qubit": 0,
+          "x": 262.5,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 1,
+          "x": 262.5,
+          "y": 335,
+          "depth": 2,
+          "parent": 2,
+          "incomingWeight": 0.5288643610650147
+        },
+        {
+          "qubit": 2,
+          "x": 262.5,
+          "y": 205,
+          "depth": 1,
+          "parent": 0,
+          "incomingWeight": 0.5288643610650153
+        }
+      ],
+      "events": {
+        "bfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 2
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.5288643610650153,
+            "start": 0.3,
+            "end": 0.7678004535147392
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [
+              {
+                "source": 2,
+                "target": 1
+              }
+            ],
+            "depth": 2,
+            "incomingMi": 0.5288643610650147,
+            "start": 0.7678004535147392,
+            "end": 1.2356009070294784
+          }
+        ],
+        "dfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 2
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.5288643610650153,
+            "start": 0.3,
+            "end": 0.7678004535147392
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [
+              {
+                "source": 2,
+                "target": 1
+              }
+            ],
+            "depth": 2,
+            "incomingMi": 0.5288643610650147,
+            "start": 0.7678004535147392,
+            "end": 1.2356009070294784
+          }
+        ]
+      },
+      "bfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 2,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.5288643610650153
+        },
+        {
+          "qubit": 1,
+          "depth": 2,
+          "parent": 2,
+          "weight": 0.5288643610650147
+        }
+      ],
+      "dfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 2,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.5288643610650153
+        },
+        {
+          "qubit": 1,
+          "depth": 2,
+          "parent": 2,
+          "weight": 0.5288643610650147
+        }
+      ]
+    },
+    {
+      "layer": 5,
+      "allEdges": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.17964191120757075
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "weight": 0.1796419112075696
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.17964191120756978
+        }
+      ],
+      "forest": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.17964191120757075
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.17964191120756978
+        }
+      ],
+      "edges": [
+        {
+          "source": 0,
+          "target": 1,
+          "weight": 0.17964191120757075
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "weight": 0.17964191120756978
+        }
+      ],
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "layout": [
+        {
+          "qubit": 0,
+          "x": 262.5,
+          "y": 75,
+          "depth": 0,
+          "parent": null,
+          "incomingWeight": null
+        },
+        {
+          "qubit": 1,
+          "x": 262.5,
+          "y": 205,
+          "depth": 1,
+          "parent": 0,
+          "incomingWeight": 0.17964191120757075
+        },
+        {
+          "qubit": 2,
+          "x": 262.5,
+          "y": 335,
+          "depth": 2,
+          "parent": 1,
+          "incomingWeight": 0.17964191120756978
+        }
+      ],
+      "events": {
+        "bfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 1
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.17964191120757075,
+            "start": 0.3,
+            "end": 0.8551020408163266
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [
+              {
+                "source": 1,
+                "target": 2
+              }
+            ],
+            "depth": 2,
+            "incomingMi": 0.17964191120756978,
+            "start": 0.8551020408163266,
+            "end": 1.410204081632653
+          }
+        ],
+        "dfs": [
+          {
+            "kind": "sound",
+            "nodes": [
+              0
+            ],
+            "edges": [],
+            "depth": 0,
+            "incomingMi": null,
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              1
+            ],
+            "edges": [
+              {
+                "source": 0,
+                "target": 1
+              }
+            ],
+            "depth": 1,
+            "incomingMi": 0.17964191120757075,
+            "start": 0.3,
+            "end": 0.8551020408163266
+          },
+          {
+            "kind": "sound",
+            "nodes": [
+              2
+            ],
+            "edges": [
+              {
+                "source": 1,
+                "target": 2
+              }
+            ],
+            "depth": 2,
+            "incomingMi": 0.17964191120756978,
+            "start": 0.8551020408163266,
+            "end": 1.410204081632653
+          }
+        ]
+      },
+      "bfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.17964191120757075
+        },
+        {
+          "qubit": 2,
+          "depth": 2,
+          "parent": 1,
+          "weight": 0.17964191120756978
+        }
+      ],
+      "dfs": [
+        {
+          "qubit": 0,
+          "depth": 0,
+          "parent": null,
+          "weight": 0.0
+        },
+        {
+          "qubit": 1,
+          "depth": 1,
+          "parent": 0,
+          "weight": 0.17964191120757075
+        },
+        {
+          "qubit": 2,
+          "depth": 2,
+          "parent": 1,
+          "weight": 0.17964191120756978
+        }
+      ]
+    }
+  ]
+}

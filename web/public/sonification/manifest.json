@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "dataset": "confirmatory_dataset",
+  "audioBaseUrl": "/sonification/audio",
+  "seeds": [
+    {
+      "id": "seed_001060",
+      "seed": 1060,
+      "label": "seed 1060",
+      "metadata": "/sonification/seeds/seed_001060/metadata.json",
+      "layerMetrics": "/sonification/seeds/seed_001060/layer_metrics.csv",
+      "blochDescriptors": "/sonification/seeds/seed_001060/bloch_descriptors.csv",
+      "gateManifest": "/sonification/seeds/seed_001060/gate_manifest.csv",
+      "graphBackbones": "/sonification/seeds/seed_001060/graph_backbones.json",
+      "miMatrices": "/sonification/seeds/seed_001060/mi_matrices.json",
+      "audioAnalysis": "/sonification/seeds/seed_001060/audio_analysis.json",
+      "segments": {
+        "bfs": "/sonification/seeds/seed_001060/bfs_segments.csv",
+        "dfs": "/sonification/seeds/seed_001060/dfs_segments.csv",
+        "mix": "/sonification/seeds/seed_001060/combined_segments.csv"
+      },
+      "audio": {
+        "bfs": "/sonification/audio/seed_001060/bfs_continuous.mp3",
+        "dfs": "/sonification/audio/seed_001060/dfs_continuous.mp3",
+        "mix": "/sonification/audio/seed_001060/combined_continuous.mp3"
+      }
+    }
+  ]
+}

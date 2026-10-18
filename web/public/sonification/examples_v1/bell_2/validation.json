@@ -1,0 +1,30 @@
+{
+  "id": "bell_2",
+  "status": "PASS",
+  "snapshots": 3,
+  "gate_operations": 2,
+  "checks": [
+    {
+      "name": "Bell state fidelity",
+      "value": 0.9999999999999996
+    },
+    {
+      "name": "Bell pair MI bits",
+      "value": 1.9999999999999987
+    },
+    {
+      "name": "Bell central-cut entropy bits",
+      "value": 1.0
+    }
+  ],
+  "audio_duration_sec": {
+    "bfs": 2.24,
+    "dfs": 2.24,
+    "combined": 2.24
+  },
+  "audio_sha256": {
+    "bfs": "2cdb3f3fd7f62c8517617c690faef99198833656d3ca02928e39e5f41f840615",
+    "dfs": "502fdbf5b49a3a6ea3333e35b997eb065f93423f8abf8862f17363a44b00c059",
+    "combined": "dba33e37b465efb0c7afda434a78d1a7080f769c9d9f97f5a7d8409c34a35c89"
+  }
+}

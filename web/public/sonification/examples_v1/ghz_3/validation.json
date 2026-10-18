@@ -1,0 +1,26 @@
+{
+  "id": "ghz_3",
+  "status": "PASS",
+  "snapshots": 4,
+  "gate_operations": 3,
+  "checks": [
+    {
+      "name": "GHZ state fidelity",
+      "value": 0.9999999999999996
+    },
+    {
+      "name": "GHZ pair MI bits",
+      "value": 1.0
+    }
+  ],
+  "audio_duration_sec": {
+    "bfs": 4.349977324263039,
+    "dfs": 4.699954648526077,
+    "combined": 4.699954648526077
+  },
+  "audio_sha256": {
+    "bfs": "e1570d750b06fd8a62870de0fa1fd4df40c15fe579501cf1f0b33dbdc4e34382",
+    "dfs": "ed3304b392300210dc24addb5b802d0ae757bdfb93f7b56450850a7ef537ebfa",
+    "combined": "8cf785e903b02ce1213ab35994627bcb63d01535739651a441b49b747ff32ee6"
+  }
+}

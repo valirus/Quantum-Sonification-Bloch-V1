@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-10-18T18:52:33.262349+00:00",
+  "test_environment": "temporary Git repository with the actual scientific .gitignore; core.autocrlf=true",
+  "branch_creation": "passed",
+  "existing_uncommitted_user_changes_preserved": true,
+  "renderer_unchanged": true,
+  "staged_paths_only_under_web": true,
+  "nine_example_wavs_included": true,
+  "dist_and_node_modules_excluded": true,
+  "54_scientific_asset_git_blob_hashes_match_input_bytes": true,
+  "repeat_install_is_idempotent": true,
+  "path_limited_commit_excludes_and_preserves_unrelated_staged_changes": true,
+  "conflicting_user_web_edit_preserved": true,
+  "actual_user_repository_modified": false
+}

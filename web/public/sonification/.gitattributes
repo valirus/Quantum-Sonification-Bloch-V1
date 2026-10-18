@@ -1,0 +1,4 @@
+# BEGIN sonification-ui-v3 exact assets
+examples_manifest.json -text -filter -ident -working-tree-encoding
+examples_v1/** -text -filter -ident -working-tree-encoding
+# END sonification-ui-v3 exact assets

@@ -1,0 +1,9 @@
+/* Retain the original site's Tailwind preflight; V3 supplies its scoped styles. */
+@tailwind base;
+
+html { background: #080a0e; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+.deployment-footer { background: #080a0e; color: #aaaab7; font: 12px/1.7 "Segoe UI", system-ui, sans-serif; padding: 20px max(24px, calc((100vw - 1392px)/2)); border-top: 1px solid #292d38; display: flex; gap: 12px 24px; flex-wrap: wrap; }
+.deployment-footer a { color: #e0c0a7; text-decoration: underline; text-underline-offset: 4px; }
+.deployment-footer a:focus-visible { outline: 2px solid #ffa465; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
